@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #FAF5EF;
+  --cream-deep: #F3ECE1;
+  --cream-card: #FAF5EF;
+  --sage: #5E715C;
+  --sage-deep: #2F3E30;
+  --sage-dark: #1E291E;
+  --gold: #C5A059;
+  --gold-soft: #DFC99E;
+  --gold-light: #F7F1E3;
+  --terracotta: #A8583B;
+  --ink: #2B2D26;
+  --ink-muted: #5E6255;
+}
+
+html, body {
+  background-color: #FAF5EF !important;
+  color: var(--ink);
+  font-family: 'Plus Jakarta Sans', 'Jost', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', 'Jost', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF5EF;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold-soft);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* Header Navigation - Solid matching background to eliminate any translucent difference */
+.solid-nav {
+  background-color: #FAF5EF;
+  border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+/* Twinkle animations */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.animate-twinkle {
+  animation: twinkle 3.6s ease-in-out infinite;
+}
+
+/* Marquee scrolling */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scrollLeft 28s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Door 3D Perspective Card */
+.door-card-container {
+  perspective: 1200px;
+}
+
+.door-card-inner {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.door-card-container:hover .door-card-inner {
+  transform: translateY(-8px) rotateY(-8deg);
+  box-shadow: 0 20px 35px -10px rgba(47, 62, 48, 0.15);
+}
