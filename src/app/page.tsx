@@ -284,6 +284,50 @@ const GEMS_DATA: GemItem[] = [
     ],
   },
   {
+    id: "corona-factory-daytrip",
+    category: "day-trips",
+    categoryLabel: "Day Trip",
+    tag: "Day Trip · Edutainment & Chocolate Making",
+    title: "Corona Factory",
+    subtitle: "Behind-the-scenes chocolate making, sweet tastings & factory tour",
+    description:
+      "Step inside Egypt's most iconic historic chocolate factory (est. 1919). Experience the magic of chocolate making from raw cocoa bean roasting to molding and packaging, taste fresh chocolates straight off the line, and take home custom gift packs.",
+    duration: "Half Day (Morning Tour)",
+    location: "Corona Chocolate Factory, 6th of October / Alexandria",
+    targetAudience: "Schools, Kids, Families & Sweet Explorers",
+    image: "/photos/corona-factory.png",
+    highlights: [
+      "Guided factory production floor tour (cocoa roasting to wrapping)",
+      "Interactive chocolate molding & custom bar decorating station",
+      "Fresh chocolate, wafer & biscuit tasting sessions",
+      "Exclusive Corona gift box & souvenir pack for each participant",
+    ],
+    itinerary: [
+      {
+        step: "Step 1",
+        title: "Arrival & Sweet Welcome",
+        desc: "Safety hygiene suit fitting, introduction to Corona's 1919 heritage, and cocoa bean discovery.",
+      },
+      {
+        step: "Step 2",
+        title: "Factory Floor Walk & Machinery",
+        desc: "Watching live conveyor belts, chocolate molding machines, and robotic packaging lines.",
+      },
+      {
+        step: "Step 3",
+        title: "Tasting Station & Gift Pack",
+        desc: "Warm chocolate tasting session, decorating personalized chocolate bars, and gift box distribution.",
+      },
+    ],
+    included: [
+      "All VIP factory entry permits and guided facility tour",
+      "Hygiene coats, hairnets, and safety gear",
+      "Unlimited chocolate tasting session",
+      "Complimentary Corona gift box pack for every guest",
+      "Comfortable air-conditioned private bus transportation",
+    ],
+  },
+  {
     id: "dragon-island",
     category: "day-trips",
     categoryLabel: "Day Trip",
@@ -1744,7 +1788,7 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
                       className="w-full px-4 py-3.5 rounded-xl bg-[#FAF5EF] text-[#2B2D26] text-sm focus:outline-none focus:ring-2 focus:ring-[#C5A059] shadow-sm font-medium cursor-pointer"
                     >
                       <option value="Events (Back to school, Sports day, Family)">Events (Back to school, Sports day, Camps)</option>
-                      <option value="Day Trip (Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Wadi Degla, Dragon Island, Fayoum, Alex...)</option>
+                      <option value="Day Trip (Corona Factory, Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Corona Factory, Wadi Degla, Dragon Island...)</option>
                       <option value="Overnight Trip (Beit El Wadi, Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Beit El Wadi, Siwa, Dahab, Aswan...)</option>
                       <option value="Workshop (Color Character, Mirror Painting, Crafts & Beading)">Workshops (Color Character, Mirror Painting, Crafts)</option>
                       <option value="Teachers & Corporate Team Building">Teachers &amp; Corporate Team Building</option>
