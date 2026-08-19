@@ -328,6 +328,49 @@ const GEMS_DATA: GemItem[] = [
     ],
   },
   {
+    id: "africano-park-daytrip",
+    category: "day-trips",
+    categoryLabel: "Day Trip",
+    tag: "Day Trip · Open Safari & Wildlife Park",
+    title: "Africano Park",
+    subtitle: "Open safari drive, animal feedings, boat cruises & reptile caves",
+    description:
+      "Egypt's first and largest open safari park. Drive alongside freely roaming African wildlife, feed deer, llamas, and monkeys, cruise the scenic river lake to monkey island, and explore mysterious reptile caves and water cascades.",
+    duration: "Full Day",
+    location: "Africano Park, Cairo-Alexandria Desert Road",
+    targetAudience: "Schools, Families, Kids & Wildlife Lovers",
+    image: "/photos/africano-park.png",
+    highlights: [
+      "Open safari car tour amongst roaming zebras, ostriches, deers & lions",
+      "Scenic riverboat cruise to monkey island and pelican bay",
+      "Hands-on animal feeding stations (giraffes, deer, monkeys)",
+      "Cave exploration walk with exotic reptiles, birds & waterfalls",
+    ],
+    itinerary: [
+      {
+        step: "Step 1",
+        title: "Open Safari Drive",
+        desc: "Driving through open habitats, viewing wild African animals, and feeding friendly deer and ostriches.",
+      },
+      {
+        step: "Step 2",
+        title: "Riverboat Cruise & Monkey Island",
+        desc: "Scenic boat cruise across the lake with up-close views of monkeys on their private island.",
+      },
+      {
+        step: "Step 3",
+        title: "Caves, Waterfalls & African Lunch",
+        desc: "Walking through reptile caves and bird sanctuaries, followed by fresh lunch at the African restaurant lodge.",
+      },
+    ],
+    included: [
+      "All Africano Park entrance tickets & safari permits",
+      "Full open safari vehicle drive & riverboat cruise",
+      "Deluxe lunch meal and refreshments",
+      "Private air-conditioned round-trip transportation",
+    ],
+  },
+  {
     id: "dragon-island",
     category: "day-trips",
     categoryLabel: "Day Trip",
@@ -1788,7 +1831,7 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
                       className="w-full px-4 py-3.5 rounded-xl bg-[#FAF5EF] text-[#2B2D26] text-sm focus:outline-none focus:ring-2 focus:ring-[#C5A059] shadow-sm font-medium cursor-pointer"
                     >
                       <option value="Events (Back to school, Sports day, Family)">Events (Back to school, Sports day, Camps)</option>
-                      <option value="Day Trip (Corona Factory, Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Corona Factory, Wadi Degla, Dragon Island...)</option>
+                      <option value="Day Trip (Africano Park, Corona Factory, Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Africano Park, Corona Factory, Wadi Degla...)</option>
                       <option value="Overnight Trip (Beit El Wadi, Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Beit El Wadi, Siwa, Dahab, Aswan...)</option>
                       <option value="Workshop (Color Character, Mirror Painting, Crafts & Beading)">Workshops (Color Character, Mirror Painting, Crafts)</option>
                       <option value="Teachers & Corporate Team Building">Teachers &amp; Corporate Team Building</option>
