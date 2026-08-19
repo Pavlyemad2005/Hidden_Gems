@@ -203,7 +203,7 @@ const GEMS_DATA: GemItem[] = [
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · Active Fun",
-    title: "Dragon Island Adventure",
+    title: "Dragon Island",
     subtitle: "Inflatable water courses, obstacle games, and non-stop energy",
     description:
       "A thrilling action-packed day trip featuring giant obstacle courses, inflatable challenges, foam parties, and fun group competitions in a safe, fully supervised park environment.",
@@ -241,7 +241,7 @@ const GEMS_DATA: GemItem[] = [
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · High Adrenaline",
-    title: "Mario Ropes Challenge & Adventure",
+    title: "Mario Ropes",
     subtitle: "Ropes courses, ziplines, and high-altitude courage",
     description:
       "An exhilarating outdoor challenge at the cliffside ropes park. Navigate suspension bridges, high-wire obstacles, wall climbing, and zip lining with full certified safety gear and professional coaches.",
@@ -284,7 +284,7 @@ const GEMS_DATA: GemItem[] = [
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · Water Sport",
-    title: "Kayak Adventure & Sunset Paddle",
+    title: "Kayak",
     subtitle: "Glide through the calm waters of the Nile at golden hour",
     description:
       "Experience Cairo from a breathtaking new angle. Paddle in double or single kayaks along scenic river islands, learn kayaking strokes from champions, and enjoy breakfast or sunset drinks on the water.",
@@ -326,7 +326,7 @@ const GEMS_DATA: GemItem[] = [
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · Cultural Discovery",
-    title: "Grand Museum & Heritage Tour",
+    title: "Museum",
     subtitle: "Unraveling the wonders of ancient Egypt with master historians",
     description:
       "A private guided exploration of Egypt's greatest historical treasures (NMEC / Grand Egyptian Museum / Tahrir Museum) curated with engaging storytelling for all generations.",
@@ -363,7 +363,7 @@ const GEMS_DATA: GemItem[] = [
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · Oasis Nature",
-    title: "Fayoum Magic Lake & Waterfalls",
+    title: "Fayoum",
     subtitle: "Wadi El Rayan waterfalls, sandboarding, and Tunis pottery village",
     description:
       "A complete desert oasis escape just 90 minutes from Cairo. Visit Egypt's only natural waterfalls, sandboard on soft dunes around Magic Lake, and enjoy lunch at a scenic lakefront Bedouin lodge.",
@@ -406,7 +406,7 @@ const GEMS_DATA: GemItem[] = [
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · Mediterranean Charm",
-    title: "Alexandria Stanley & Coastal Heritage",
+    title: "Alexandria",
     subtitle: "Historic Citadel, Stanley Bridge, and iconic Mediterranean seafood",
     description:
       "Breathe in the Mediterranean breeze on a rich day journey across the Pearl of the Mediterranean. Explore the Citadel of Qaitbay, Bibliotheca Alexandrina, Stanley Bridge, and authentic Greek/Alexandrian seaside dining.",
@@ -448,7 +448,7 @@ const GEMS_DATA: GemItem[] = [
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · Coastal Day Use",
-    title: "Sokhna Seaside Day Retreat (SO5NA)",
+    title: "Sokhna (SO5NA)",
     subtitle: "Crystal Red Sea waters, private beach lounge & fresh sea breeze",
     description:
       "An effortless day escape just 60 minutes from New Cairo. Relax on private sandy beaches, swim in warm turquoise waters, and enjoy a day-use chalet or resort pass with fresh meals and water sports.",
@@ -485,7 +485,7 @@ const GEMS_DATA: GemItem[] = [
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · Canal Heritage",
-    title: "Port Said & Harbor Walk",
+    title: "Port Said",
     subtitle: "Iconic historic lighthouse, ferry crossings, and Mediterranean charm",
     description:
       "Discover the unique Franco-Egyptian architecture, the world-famous Suez Canal entry lighthouse, historical ferry cruises, and legendary Port Said street food and seafood.",
@@ -522,7 +522,7 @@ const GEMS_DATA: GemItem[] = [
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · Garden City",
-    title: "Ismailia & Suez Canal Heritage",
+    title: "Ismailia",
     subtitle: "Lush gardens, Lake Timsah sailing, and historic colonial mansions",
     description:
       "Known as the City of Gardens, Ismailia offers tranquil lake shores along Lake Timsah, views of giant container ships crossing the Suez Canal, and serene green parks.",
