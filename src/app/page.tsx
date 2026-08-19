@@ -490,7 +490,7 @@ const GEMS_DATA: GemItem[] = [
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · Coastal Day Use",
-    title: "Sokhna (SO5NA)",
+    title: "Sokhna",
     subtitle: "Crystal Red Sea waters, private beach lounge & fresh sea breeze",
     description:
       "An effortless day escape just 60 minutes from New Cairo. Relax on private sandy beaches, swim in warm turquoise waters, and enjoy a day-use chalet or resort pass with fresh meals and water sports.",
