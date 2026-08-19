@@ -561,7 +561,7 @@ const GEMS_DATA: GemItem[] = [
     category: "overnight",
     categoryLabel: "Overnight Trip",
     tag: "Overnight · 3 Days / 2 Nights",
-    title: "Siwa Oasis Deep Immersion",
+    title: "Siwa",
     subtitle: "Salt lakes, golden dunes, and starlit desert silence",
     description:
       "Egypt's most mystical oasis. Float effortlessly in crystalline turquoise salt pools, cross the Great Sand Sea in 4x4 safaris, and spend desert nights around warm Bedouin fires beneath millions of stars.",
@@ -604,7 +604,7 @@ const GEMS_DATA: GemItem[] = [
     category: "overnight",
     categoryLabel: "Overnight Trip",
     tag: "Overnight · 4 Days / 3 Nights",
-    title: "Dahab & Blue Lagoon Coastal Camp",
+    title: "Dahab",
     subtitle: "Diving, marine sanctuaries, and slow mornings by turquoise water",
     description:
       "Unplug completely in South Sinai. Enjoy seaside mornings, world-class coral reef snorkeling at the Blue Hole and Ras Abu Galum, boat rides to the Blue Lagoon, and stargazing from beach campfires.",
@@ -652,7 +652,7 @@ const GEMS_DATA: GemItem[] = [
     category: "overnight",
     categoryLabel: "Overnight Trip",
     tag: "Overnight · 4 Days / 3 Nights",
-    title: "Aswan & Nile Nubian Voyage",
+    title: "Aswan",
     subtitle: "A slow sailing voyage through timeless temples and colorful islands",
     description:
       "Sail on traditional wooden feluccas along the Nile, walk among towering columns at Philae Temple, and immerse in rich, warm Nubian heritage in Gharb Soheil.",
@@ -700,7 +700,7 @@ const GEMS_DATA: GemItem[] = [
     category: "overnight",
     categoryLabel: "Overnight Trip",
     tag: "Overnight · 3 Days / 2 Nights",
-    title: "Nweibaa Coastal & Mountain Camp",
+    title: "Nweibaa",
     subtitle: "Majestic Sinai mountains meeting calm turquoise beach camps",
     description:
       "Escape to the untouched coastline of Nuweiba where golden Sinai mountain peaks touch tranquil Red Sea coves. Stay in authentic bamboo beach huts, stargaze, and explore Wishwashi canyon springs.",
@@ -743,7 +743,7 @@ const GEMS_DATA: GemItem[] = [
     category: "overnight",
     categoryLabel: "Overnight Trip",
     tag: "Overnight · 3 Days / 2 Nights",
-    title: "Sharm El Sheikh Red Sea Escape",
+    title: "Sharm El Sheikh",
     subtitle: "World-class coral diving, luxury resorts & Ras Mohamed sanctuary",
     description:
       "Experience world-renowned luxury and vibrant coral biodiversity at the tip of South Sinai. Explore Ras Mohamed National Park, yacht excursions, and lively evening promenades.",
@@ -785,7 +785,7 @@ const GEMS_DATA: GemItem[] = [
     category: "overnight",
     categoryLabel: "Overnight Trip",
     tag: "Overnight · 3 Days / 2 Nights",
-    title: "Hurghada & Giftun Island Safari",
+    title: "Hurghada",
     subtitle: "Caribbean-like white sand sandbars and vibrant marina evenings",
     description:
       "A sun-drenched coastal retreat featuring boat rides to Orange Bay & Giftun Island, dolphin watching excursions, desert quad biking, and dining by Hurghada Marina.",
