@@ -915,7 +915,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "1 to 2 Days (With Overnight Option)",
     location: "Fayoum / Sokhna / Wadi Degla",
     targetAudience: "Teachers, Educators & Companies",
-    image: "/photos/mario-ropes.png",
+    image: "/photos/team-building.png",
     highlights: [
       "Customized team synergy games & strategy simulations",
       "Mindfulness, wellness, and stress-relief outdoor sessions",
