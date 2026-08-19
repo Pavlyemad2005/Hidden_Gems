@@ -642,6 +642,49 @@ const GEMS_DATA: GemItem[] = [
 
   // ================= OVERNIGHT ADVENTURES =================
   {
+    id: "beit-el-wadi-overnight",
+    category: "overnight",
+    categoryLabel: "Overnight Trip",
+    tag: "Overnight · Adventure & Retreat Lodge",
+    title: "Beit El Wadi",
+    subtitle: "High-wire ropes, obstacle courses, resort pools & campfire nights",
+    description:
+      "Egypt's premier purpose-built adventure camp and retreat center located on the Alexandria Desert Road. Experience world-class high and low ropes courses, zip lines, giant swings, paddle tennis courts, expansive swimming pools, and inspiring starlit campfire nights.",
+    duration: "2 Days / 1 Night (or 3D / 2N)",
+    location: "Beit El Wadi, Cairo-Alex Desert Road / Wadi El Natrun",
+    targetAudience: "Schools, Youth Camps, Churches, Families & Corporates",
+    image: "/photos/beit-el-wadi.png",
+    highlights: [
+      "High-altitude ropes obstacle course, giant swing & ziplines",
+      "Expansive swimming pool relaxation & paddle tennis courts",
+      "Guided team bonding challenges, relay races & obstacle circuits",
+      "Evening open-air BBQ grill & cozy campfire reflection circle",
+    ],
+    itinerary: [
+      {
+        step: "Day 1",
+        title: "Arrival, Ropes Courses & Pool Time",
+        desc: "Lodge check-in, high-wire adventure obstacle courses, swimming pool games, and sunset relaxation.",
+      },
+      {
+        step: "Night 1",
+        title: "Campfire Circle & BBQ Feast",
+        desc: "Delicious charcoal BBQ dinner, campfire music, roasted marshmallows, and team bonding.",
+      },
+      {
+        step: "Day 2",
+        title: "Paddle Tournaments & Team Games",
+        desc: "Morning sports tournaments, paddle matches, obstacle challenges, lunch feast, and return drive.",
+      },
+    ],
+    included: [
+      "Full accommodation in air-conditioned resort lodge rooms",
+      "All meals (Breakfast, Lunch, BBQ Dinner, Drinks & Snacks)",
+      "Certified adventure instructors, harnesses & safety gear",
+      "Round-trip private air-conditioned transportation",
+    ],
+  },
+  {
     id: "siwa-overnight",
     category: "overnight",
     categoryLabel: "Overnight Trip",
@@ -1319,13 +1362,13 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
               </h3>
               <div className="w-10 h-[1px] bg-[#C5A059] my-2"></div>
               <ul className="text-xs text-[#4A5A48] font-light space-y-2 text-left w-full my-4 pl-4 list-disc marker:text-[#3A7885]">
+                <li>Beit El Wadi Adventure Camp &amp; Lodges</li>
                 <li>Wadi Degla Protected Area &amp; Hikes</li>
                 <li>Dragon Island &amp; Mario Ropes</li>
                 <li>Fayoum Waterfalls &amp; Magic Lake</li>
                 <li>Siwa Oasis Desert Safari</li>
                 <li>Aswan &amp; Nile Felucca Sailing</li>
                 <li>Dahab, Nuweiba &amp; Blue Hole</li>
-                <li>Alexandria &amp; Sokhna Coastal Trips</li>
               </ul>
               <div className="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] font-semibold text-[#3A7885] group-hover:text-[#2C3E2D] transition-colors">
                 <span>View Trips</span>
@@ -1702,7 +1745,7 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
                     >
                       <option value="Events (Back to school, Sports day, Family)">Events (Back to school, Sports day, Camps)</option>
                       <option value="Day Trip (Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Wadi Degla, Dragon Island, Fayoum, Alex...)</option>
-                      <option value="Overnight Trip (Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Siwa, Dahab, Aswan, Nuweiba...)</option>
+                      <option value="Overnight Trip (Beit El Wadi, Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Beit El Wadi, Siwa, Dahab, Aswan...)</option>
                       <option value="Workshop (Color Character, Mirror Painting, Crafts & Beading)">Workshops (Color Character, Mirror Painting, Crafts)</option>
                       <option value="Teachers & Corporate Team Building">Teachers &amp; Corporate Team Building</option>
                       <option value="Custom Tailored Experience">Custom Tailored Experience</option>
