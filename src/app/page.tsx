@@ -836,7 +836,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day / Half Day",
     location: "School Campuses / Sports Clubs",
     targetAudience: "Schools, Students & Families",
-    image: "/photos/dragon-island.png",
+    image: "/photos/back-to-school.png",
     highlights: [
       "Custom stage production, sound systems, and fun MC animators",
       "Inflatable obstacle courses, foam zones, and carnival booths",
