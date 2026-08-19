@@ -25,7 +25,7 @@ interface GemItem {
   included: string[];
 }
 
-// --- Official Catalog Data (Ultra HD Luxury Photography) ---
+// --- Official Catalog Data (100% Authentic Photos from Posters) ---
 const GEMS_DATA: GemItem[] = [
   // ================= WORKSHOPS =================
   {
@@ -40,7 +40,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "2 - 3 Hours",
     location: "Studio / School / Private Venue",
     targetAudience: "Kids, Families & Youth Camps",
-    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/color-character.png",
     highlights: [
       "Custom character illustration templates & guided drawing steps",
       "All professional coloring supplies, sketchbooks, and markers",
@@ -82,7 +82,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "2.5 Hours",
     location: "Garden / Rooftop / Private Venue",
     targetAudience: "Teens, Adults, Mother & Child",
-    image: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/mirror-painting.png",
     highlights: [
       "Custom framed aesthetic round and arch mirrors",
       "Specialized glass paints, foam brushes, and textured paste",
@@ -124,7 +124,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "2 - 3 Hours",
     location: "Flexible / Indoor & Outdoor",
     targetAudience: "All Ages & Team Events",
-    image: "https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/arts-crafts.png",
     highlights: [
       "Inspirational custom word bracelets, charms, and necklaces",
       "Clay sculpting and decorative pottery modeling",
@@ -166,7 +166,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Half-Day / Full-Day Sessions",
     location: "Schools / Academies / Retreats",
     targetAudience: "Students, Schools & Youth",
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/mario-ropes.png",
     highlights: [
       "Fun gamified leadership and problem-solving challenges",
       "Public speaking, active listening, and team synergy exercises",
@@ -210,7 +210,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day",
     location: "Dragon Park / Le Lac Du Caire",
     targetAudience: "Schools, Youth & Family Fun",
-    image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/dragon-island.png",
     highlights: [
       "Giant dragon-themed obstacle circuits & climbing towers",
       "Team challenges, relay races, and color festivals",
@@ -248,7 +248,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day",
     location: "Mokattam / Saint Simon Clifftops, Cairo",
     targetAudience: "Schools, Families & Corporate Teams",
-    image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/mario-ropes.png",
     highlights: [
       "Multi-level high and low ropes obstacle courses",
       "Rock climbing wall and giant swing adrenaline rush",
@@ -291,7 +291,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Half Day (Morning / Sunset)",
     location: "Zamalek / Maadi Nile Banks",
     targetAudience: "Couples, Friends & Groups",
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/kayak.png",
     highlights: [
       "Guided Nile kayaking tour around calm secluded river islands",
       "Safety briefing, life jackets, and rescue boat companion",
@@ -333,7 +333,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Half / Full Day",
     location: "Grand Egyptian Museum & Giza",
     targetAudience: "Schools, Families & Cultural Explorers",
-    image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/museum.png",
     highlights: [
       "Private Egyptologist historian guide tailored to the group",
       "Royal mummies hall and King Tutankhamun galleries",
@@ -370,7 +370,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day (7 AM – 9 PM)",
     location: "Fayoum & Wadi El Rayan",
     targetAudience: "Families, Friends & Schools",
-    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/fayoum.png",
     highlights: [
       "Wadi El Rayan waterfalls & wooden felucca boat ride",
       "Sandboarding on dunes overlooking Magic Lake",
@@ -413,7 +413,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day (6:30 AM – 9:30 PM)",
     location: "Alexandria & Stanley Bay",
     targetAudience: "Families, Friends & Schools",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/alexandria.png",
     highlights: [
       "Qaitbay Citadel & panoramic Mediterranean sea views",
       "Bibliotheca Alexandrina guided discovery",
@@ -455,7 +455,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day",
     location: "Ain Sokhna, Red Sea Coast",
     targetAudience: "Families, Friends & Corporate Teams",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/sokhna.png",
     highlights: [
       "Private beachfront day-use access at premier coastal resort",
       "Swimming pool, sandy beach umbrellas, and sea relaxation",
@@ -492,7 +492,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day",
     location: "Port Said & Port Fouad",
     targetAudience: "Cultural Explorers & Families",
-    image: "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/portsaid.png",
     highlights: [
       "Historic Port Said Lighthouse & Suez Canal Promenade",
       "Free ferry boat crossing to Port Fouad and Salt Mountains",
@@ -529,7 +529,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day",
     location: "Ismailia & Lake Timsah",
     targetAudience: "Relaxation Seekers & Families",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/ismailia.png",
     highlights: [
       "Boat tour on Lake Timsah overlooking the Suez Canal",
       "Walking tour of historic French colonial neighborhood",
@@ -568,7 +568,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "3 Days / 2 Nights",
     location: "Siwa Oasis, Western Desert",
     targetAudience: "Adventure Seekers, Couples & Groups",
-    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/siwa.png",
     highlights: [
       "Floating in therapeutic turquoise salt lakes",
       "Sunset sandboarding & 4x4 safari across Great Sand Sea",
@@ -611,7 +611,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "4 Days / 3 Nights",
     location: "Dahab & Ras Abu Galum, South Sinai",
     targetAudience: "Youth, Families & Adventure Groups",
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/dahab.png",
     highlights: [
       "Guided snorkeling and diving at Blue Hole & Three Pools",
       "Boat ride to secluded Ras Abu Galum lagoon & Blue Lagoon swim",
@@ -659,7 +659,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "4 Days / 3 Nights",
     location: "Aswan & Upper Egypt",
     targetAudience: "Cultural Travelers & Families",
-    image: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/aswan.png",
     highlights: [
       "Private sunset felucca sailing with live Nubian music",
       "Island Temple of Isis at Philae & High Dam",
@@ -707,7 +707,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "3 Days / 2 Nights",
     location: "Nweibaa & Ras Shaitan, Sinai",
     targetAudience: "Nature Lovers & Campers",
-    image: "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/nweibaa.png",
     highlights: [
       "Beachfront bamboo bungalow camp experience",
       "4x4 safari hike to Wishwashi freshwater canyon oasis",
@@ -750,7 +750,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "3 Days / 2 Nights",
     location: "Sharm El Sheikh & Ras Mohamed",
     targetAudience: "Families, Youth & International Visitors",
-    image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/sharm.png",
     highlights: [
       "VIP Yacht sailing trip to Ras Mohamed & White Island",
       "Snorkeling among rare coral reefs and sea turtles",
@@ -792,7 +792,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "3 Days / 2 Nights",
     location: "Hurghada & Giftun Islands, Red Sea",
     targetAudience: "Families, Friends & Water Lovers",
-    image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/hurghada.png",
     highlights: [
       "Private boat cruise to Orange Bay / Giftun Island sandbanks",
       "Snorkeling on pristine offshore coral reefs",
@@ -836,7 +836,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day / Half Day",
     location: "School Campuses / Sports Clubs",
     targetAudience: "Schools, Students & Families",
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/dragon-island.png",
     highlights: [
       "Custom stage production, sound systems, and fun MC animators",
       "Inflatable obstacle courses, foam zones, and carnival booths",
@@ -878,7 +878,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day Experience",
     location: "Oasis Lodges / Nature Resorts",
     targetAudience: "Schools, Communities & Families",
-    image: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/color-character.png",
     highlights: [
       "Parent-child cooperative team challenges & fun relays",
       "Campfire cooking & outdoor marshmallow roasting",
@@ -915,7 +915,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "1 to 2 Days (With Overnight Option)",
     location: "Fayoum / Sokhna / Wadi Degla",
     targetAudience: "Teachers, Educators & Companies",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=85",
+    image: "/photos/mario-ropes.png",
     highlights: [
       "Customized team synergy games & strategy simulations",
       "Mindfulness, wellness, and stress-relief outdoor sessions",
