@@ -772,6 +772,49 @@ const GEMS_DATA: GemItem[] = [
     ],
   },
   {
+    id: "ras-sudr-overnight",
+    category: "overnight",
+    categoryLabel: "Overnight Trip",
+    tag: "Overnight · Coastal Kitesurf & Beachfront",
+    title: "Ras Sudr",
+    subtitle: "Kitesurfing winds, shallow turquoise lagoons & beachfront relaxation",
+    description:
+      "Egypt's premier kitesurfing haven just 2.5 hours from Cairo. Unwind on wide sandy beaches with straw umbrellas, glide across calm shallow lagoons, experience beginner or pro kitesurfing, and enjoy sunset beach campfires by the Gulf of Suez.",
+    duration: "2 Days / 1 Night (or 3D / 2N)",
+    location: "Ras Sudr, South Sinai / Gulf of Suez",
+    targetAudience: "Water Sports Enthusiasts, Friends, Families & Youth",
+    image: "/photos/ras-sudr.png",
+    highlights: [
+      "World-renowned kitesurfing & windsurfing flat-water lagoons",
+      "Beachfront resort stay with straw umbrellas & private loungers",
+      "Sunset beach volleyball, paddleboarding & water activities",
+      "Evening coastal BBQ grill & starlit beach campfire circle",
+    ],
+    itinerary: [
+      {
+        step: "Day 1",
+        title: "Coastal Arrival & Lagoon Sessions",
+        desc: "Resort check-in, beach relaxation under straw umbrellas, kitesurf/paddleboard sessions, and sunset swim.",
+      },
+      {
+        step: "Night 1",
+        title: "Beach Campfire & BBQ Dinner",
+        desc: "Seaside charcoal BBQ dinner, beach bonfire, music, and stargazing by the Gulf of Suez.",
+      },
+      {
+        step: "Day 2",
+        title: "Morning Water Sports & Departure",
+        desc: "Sunrise swim, morning kitesurf sessions, beach games, fresh seafood lunch, and return drive.",
+      },
+    ],
+    included: [
+      "Full overnight accommodation at premier beachfront resort / chalets",
+      "All meals (Breakfast, Fresh Lunch, Beach BBQ Dinner)",
+      "Water sports facility access, paddleboards & beach games",
+      "Round-trip private air-conditioned transportation",
+    ],
+  },
+  {
     id: "siwa-overnight",
     category: "overnight",
     categoryLabel: "Overnight Trip",
@@ -1832,7 +1875,7 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
                     >
                       <option value="Events (Back to school, Sports day, Family)">Events (Back to school, Sports day, Camps)</option>
                       <option value="Day Trip (Africano Park, Corona Factory, Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Africano Park, Corona Factory, Wadi Degla...)</option>
-                      <option value="Overnight Trip (Beit El Wadi, Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Beit El Wadi, Siwa, Dahab, Aswan...)</option>
+                      <option value="Overnight Trip (Ras Sudr, Beit El Wadi, Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Ras Sudr, Beit El Wadi, Siwa...)</option>
                       <option value="Workshop (Color Character, Mirror Painting, Crafts & Beading)">Workshops (Color Character, Mirror Painting, Crafts)</option>
                       <option value="Teachers & Corporate Team Building">Teachers &amp; Corporate Team Building</option>
                       <option value="Custom Tailored Experience">Custom Tailored Experience</option>
