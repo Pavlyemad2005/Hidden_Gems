@@ -208,7 +208,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "2 - 3 Hours / Full-Day Sessions",
     location: "Schools / Universities / Private Studios",
     targetAudience: "High School & University Students, Young Adults",
-    image: "/photos/team-building.png",
+    image: "/photos/career-coaching.png",
     highlights: [
       "Personality & career aptitude assessment tools",
       "Exploration of modern industry sectors and future jobs",
