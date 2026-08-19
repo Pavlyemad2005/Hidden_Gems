@@ -241,6 +241,49 @@ const GEMS_DATA: GemItem[] = [
 
   // ================= DAY TRIPS =================
   {
+    id: "wadi-degla-daytrip",
+    category: "day-trips",
+    categoryLabel: "Day Trip",
+    tag: "Day Trip · Nature & Protected Area",
+    title: "Wadi Degla",
+    subtitle: "Limestone canyon hikes, sunset campfire & desert adventures in Maadi",
+    description:
+      "A serene desert canyon sanctuary right on the edge of Cairo. Explore winding limestone valleys, mountain bike through rugged trails, discover ancient marine fossils, and unwind around an authentic evening campfire BBQ.",
+    duration: "Half / Full Day (Morning or Sunset Camp)",
+    location: "Wadi Degla Protected Area, Maadi, Cairo",
+    targetAudience: "Schools, Families, Scouts & Friends",
+    image: "/photos/wadi-degla.png",
+    highlights: [
+      "Scenic canyon hiking trails & ancient fossil valley discovery",
+      "Sunset campfire circle with Bedouin tea & roasted marshmallows",
+      "Mountain biking, cave exploration & team adventure games",
+      "Fresh open-air BBQ grill feast under the starry sky",
+    ],
+    itinerary: [
+      {
+        step: "Afternoon",
+        title: "Canyon Trek & Geological Exploration",
+        desc: "Guided hike through limestone passes, ancient cave spots, and scenic canyon lookouts.",
+      },
+      {
+        step: "Sunset",
+        title: "Campfire & Bedouin Tea",
+        desc: "Gathering by the desert fire circle with traditional herbal tea, music, and group games.",
+      },
+      {
+        step: "Evening",
+        title: "BBQ Feast & Stargazing",
+        desc: "Fresh charcoal BBQ grill feast and astronomy stargazing under the desert night sky.",
+      },
+    ],
+    included: [
+      "Official protected area entrance tickets & national park permits",
+      "Certified outdoor adventure guides & Hidden Gems hosts",
+      "Complete campfire setup with Bedouin tea & marshmallows",
+      "Fresh BBQ meal, snacks, and water supplies",
+    ],
+  },
+  {
     id: "dragon-island",
     category: "day-trips",
     categoryLabel: "Day Trip",
@@ -1276,13 +1319,13 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
               </h3>
               <div className="w-10 h-[1px] bg-[#C5A059] my-2"></div>
               <ul className="text-xs text-[#4A5A48] font-light space-y-2 text-left w-full my-4 pl-4 list-disc marker:text-[#3A7885]">
+                <li>Wadi Degla Protected Area &amp; Hikes</li>
                 <li>Dragon Island &amp; Mario Ropes</li>
                 <li>Fayoum Waterfalls &amp; Magic Lake</li>
                 <li>Siwa Oasis Desert Safari</li>
                 <li>Aswan &amp; Nile Felucca Sailing</li>
                 <li>Dahab, Nuweiba &amp; Blue Hole</li>
                 <li>Alexandria &amp; Sokhna Coastal Trips</li>
-                <li>Hurghada &amp; Sharm El Sheikh</li>
               </ul>
               <div className="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] font-semibold text-[#3A7885] group-hover:text-[#2C3E2D] transition-colors">
                 <span>View Trips</span>
@@ -1658,7 +1701,7 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
                       className="w-full px-4 py-3.5 rounded-xl bg-[#FAF5EF] text-[#2B2D26] text-sm focus:outline-none focus:ring-2 focus:ring-[#C5A059] shadow-sm font-medium cursor-pointer"
                     >
                       <option value="Events (Back to school, Sports day, Family)">Events (Back to school, Sports day, Camps)</option>
-                      <option value="Day Trip (Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Dragon Island, Mario Ropes, Fayoum, Alex...)</option>
+                      <option value="Day Trip (Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Wadi Degla, Dragon Island, Fayoum, Alex...)</option>
                       <option value="Overnight Trip (Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Siwa, Dahab, Aswan, Nuweiba...)</option>
                       <option value="Workshop (Color Character, Mirror Painting, Crafts & Beading)">Workshops (Color Character, Mirror Painting, Crafts)</option>
                       <option value="Teachers & Corporate Team Building">Teachers &amp; Corporate Team Building</option>
