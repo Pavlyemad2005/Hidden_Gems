@@ -19,14 +19,13 @@ interface GemItem {
   duration: string;
   location: string;
   targetAudience?: string;
-  bgGradient: string;
-  sceneSvg: React.ReactNode;
+  image: string;
   highlights: string[];
   itinerary: { step: string; title: string; desc: string }[];
   included: string[];
 }
 
-// --- Official Catalog Data ---
+// --- Official Catalog Data (100% Real Authentic Photos from Posters) ---
 const GEMS_DATA: GemItem[] = [
   // ================= WORKSHOPS =================
   {
@@ -41,10 +40,10 @@ const GEMS_DATA: GemItem[] = [
     duration: "2 - 3 Hours",
     location: "Studio / School / Private Venue",
     targetAudience: "Kids, Families & Youth Camps",
-    bgGradient: "linear-gradient(180deg, #382A1C 0%, #8A5B30 55%, #D49B4B 100%)",
+    image: "/photos/color-character.png",
     highlights: [
       "Custom character illustration templates & guided drawing steps",
-      "All professional coloring supplies, sketchbooks, and stickers",
+      "All professional coloring supplies, sketchbooks, and markers",
       "Take-home framed character artwork",
       "Fun storytelling and creative sharing circle",
     ],
@@ -70,15 +69,6 @@ const GEMS_DATA: GemItem[] = [
       "Professional art instructor & creative facilitators",
       "Protective aprons and take-home gift frames",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <circle cx="90" cy="55" r="1.8" fill="#F8F5EE" /><circle cx="150" cy="35" r="1.4" fill="#F8F5EE" />
-        <circle cx="220" cy="65" r="2" fill="#DFC99E" /><circle cx="330" cy="45" r="1.6" fill="#F8F5EE" />
-        <path d="M140,240 Q180,180 220,240" fill="none" stroke="#F8F5EE" strokeWidth="2.5" opacity="0.85" />
-        <circle cx="180" cy="160" r="30" fill="none" stroke="#DFC99E" strokeWidth="2.5" opacity="0.9" />
-        <path d="M165,155 Q180,170 195,155" fill="none" stroke="#F8F5EE" strokeWidth="2" opacity="0.85" />
-      </svg>
-    ),
   },
   {
     id: "mirror-painting",
@@ -92,7 +82,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "2.5 Hours",
     location: "Garden / Rooftop / Private Venue",
     targetAudience: "Teens, Adults, Mother & Child",
-    bgGradient: "linear-gradient(180deg, #1C2C38 0%, #305B78 55%, #6CA0C2 100%)",
+    image: "/photos/mirror-painting.png",
     highlights: [
       "Custom framed aesthetic round and arch mirrors",
       "Specialized glass paints, foam brushes, and textured paste",
@@ -121,13 +111,6 @@ const GEMS_DATA: GemItem[] = [
       "All paints, textured mediums, and embellishments",
       "Protective packaging box for safe transport home",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <circle cx="200" cy="150" r="70" fill="none" stroke="#F8F5EE" strokeWidth="3" opacity="0.85" />
-        <circle cx="200" cy="150" r="58" fill="none" stroke="#DFC99E" strokeWidth="1.5" opacity="0.7" />
-        <path d="M150,180 Q180,130 200,160 T250,140" fill="none" stroke="#F8F5EE" strokeWidth="2.5" opacity="0.8" />
-      </svg>
-    ),
   },
   {
     id: "arts-and-crafts",
@@ -141,7 +124,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "2 - 3 Hours",
     location: "Flexible / Indoor & Outdoor",
     targetAudience: "All Ages & Team Events",
-    bgGradient: "linear-gradient(180deg, #301E28 0%, #733E5E 55%, #B86B98 100%)",
+    image: "/photos/arts-crafts.png",
     highlights: [
       "Inspirational custom word bracelets, charms, and necklaces",
       "Clay sculpting and decorative pottery modeling",
@@ -170,14 +153,6 @@ const GEMS_DATA: GemItem[] = [
       "Instructor guidance & creative support",
       "Bespoke jewelry gift pouches",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <circle cx="200" cy="150" r="60" fill="none" stroke="#DFC99E" strokeWidth="2" strokeDasharray="8 6" opacity="0.85" />
-        <circle cx="160" cy="120" r="7" fill="#F8F5EE" /><circle cx="200" cy="90" r="7" fill="#DFC99E" />
-        <circle cx="240" cy="120" r="7" fill="#F8F5EE" /><circle cx="255" cy="165" r="7" fill="#DFC99E" />
-        <circle cx="225" cy="205" r="7" fill="#F8F5EE" /><circle cx="175" cy="205" r="7" fill="#DFC99E" />
-      </svg>
-    ),
   },
   {
     id: "character-career",
@@ -191,7 +166,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Half-Day / Full-Day Sessions",
     location: "Schools / Academies / Retreats",
     targetAudience: "Students, Schools & Youth",
-    bgGradient: "linear-gradient(180deg, #1C2E20 0%, #3B5F44 55%, #7BA485 100%)",
+    image: "/photos/mario-ropes.png",
     highlights: [
       "Fun gamified leadership and problem-solving challenges",
       "Public speaking, active listening, and team synergy exercises",
@@ -220,16 +195,47 @@ const GEMS_DATA: GemItem[] = [
       "Certified developmental coaches and facilitators",
       "Certificates of completion",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <polygon points="200,90 230,170 170,170" fill="none" stroke="#DFC99E" strokeWidth="2" opacity="0.8" />
-        <circle cx="200" cy="70" r="14" fill="#F8F5EE" opacity="0.85" />
-        <line x1="200" y1="170" x2="200" y2="230" stroke="#F8F5EE" strokeWidth="2.5" opacity="0.8" />
-      </svg>
-    ),
   },
 
   // ================= DAY TRIPS =================
+  {
+    id: "dragon-island",
+    category: "day-trips",
+    categoryLabel: "Day Trip",
+    tag: "Day Trip · Active Fun",
+    title: "Dragon Island Adventure",
+    subtitle: "Inflatable water courses, obstacle games, and non-stop energy",
+    description:
+      "A thrilling action-packed day trip featuring giant obstacle courses, inflatable challenges, foam parties, and fun group competitions in a safe, fully supervised park environment.",
+    duration: "Full Day",
+    location: "Dragon Park / Le Lac Du Caire",
+    targetAudience: "Schools, Youth & Family Fun",
+    image: "/photos/dragon-island.png",
+    highlights: [
+      "Giant dragon-themed obstacle circuits & climbing towers",
+      "Team challenges, relay races, and color festivals",
+      "Dedicated supervision by enthusiastic Hidden Gems hosts",
+      "Full meal catering and music throughout the day",
+    ],
+    itinerary: [
+      {
+        step: "Morning",
+        title: "Arrival & Dragon Challenge Kick-off",
+        desc: "Team division, colored bandanas, and obstacle course races.",
+      },
+      {
+        step: "Afternoon",
+        title: "Games & Foam Festivities",
+        desc: "Inflatable water slip & slides, tug-of-war, and lunch feast.",
+      },
+    ],
+    included: [
+      "Round-trip air-conditioned transport",
+      "All park games and attraction entries",
+      "Full lunch meal & unlimited water",
+      "First aid and dedicated team leader supervision",
+    ],
+  },
   {
     id: "mario-ropes",
     category: "day-trips",
@@ -242,7 +248,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day",
     location: "Mokattam / Saint Simon Clifftops, Cairo",
     targetAudience: "Schools, Families & Corporate Teams",
-    bgGradient: "linear-gradient(180deg, #262116 0%, #635032 55%, #B3925B 100%)",
+    image: "/photos/mario-ropes.png",
     highlights: [
       "Multi-level high and low ropes obstacle courses",
       "Rock climbing wall and giant swing adrenaline rush",
@@ -272,74 +278,20 @@ const GEMS_DATA: GemItem[] = [
       "Complete safety gear & certified instructors",
       "Lunch, snacks, and fresh refreshments",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <line x1="50" y1="120" x2="350" y2="120" stroke="#DFC99E" strokeWidth="3" opacity="0.8" />
-        <line x1="100" y1="120" x2="100" y2="230" stroke="#F8F5EE" strokeWidth="2" opacity="0.6" />
-        <line x1="200" y1="120" x2="200" y2="230" stroke="#F8F5EE" strokeWidth="2" opacity="0.6" />
-        <line x1="300" y1="120" x2="300" y2="230" stroke="#F8F5EE" strokeWidth="2" opacity="0.6" />
-        <circle cx="180" cy="110" r="10" fill="#DFC99E" />
-      </svg>
-    ),
-  },
-  {
-    id: "dragon-island",
-    category: "day-trips",
-    categoryLabel: "Day Trip",
-    tag: "Day Trip · Active Fun",
-    title: "Dragon Island Adventure",
-    subtitle: "Inflatable water courses, obstacle games, and non-stop energy",
-    description:
-      "A thrilling action-packed day trip featuring giant obstacle courses, inflatable challenges, foam parties, and fun group competitions in a safe, fully supervised park environment.",
-    duration: "Full Day",
-    location: "Le Lac Du Caire / 6th of October",
-    targetAudience: "Schools, Youth & Family Fun",
-    bgGradient: "linear-gradient(180deg, #182E26 0%, #306654 55%, #59A389 100%)",
-    highlights: [
-      "Giant dragon-themed obstacle circuits & climbing towers",
-      "Team challenges, relay races, and color festivals",
-      "Dedicated supervision by enthusiastic Hidden Gems hosts",
-      "Full meal catering and music throughout the day",
-    ],
-    itinerary: [
-      {
-        step: "Morning",
-        title: "Arrival & Dragon Challenge Kick-off",
-        desc: "Team division, colored bandanas, and obstacle course races.",
-      },
-      {
-        step: "Afternoon",
-        title: "Games & Foam Festivities",
-        desc: "Inflatable water slip & slides, tug-of-war, and lunch feast.",
-      },
-    ],
-    included: [
-      "Round-trip air-conditioned transport",
-      "All park games and attraction entries",
-      "Full lunch meal & unlimited water",
-      "First aid and dedicated team leader supervision",
-    ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <path d="M50,220 Q120,130 200,190 T350,170" fill="none" stroke="#DFC99E" strokeWidth="3" opacity="0.8" />
-        <polygon points="120,150 140,110 160,150" fill="#F8F5EE" opacity="0.8" />
-        <polygon points="240,160 260,120 280,160" fill="#F8F5EE" opacity="0.8" />
-      </svg>
-    ),
   },
   {
     id: "kayak-nile",
     category: "day-trips",
     categoryLabel: "Day Trip",
     tag: "Day Trip · Water Sport",
-    title: "Nile Kayak & Sunset Paddle",
+    title: "Kayak Adventure & Sunset Paddle",
     subtitle: "Glide through the calm waters of the Nile at golden hour",
     description:
       "Experience Cairo from a breathtaking new angle. Paddle in double or single kayaks along scenic river islands, learn kayaking strokes from champions, and enjoy breakfast or sunset drinks on the water.",
     duration: "Half Day (Morning / Sunset)",
     location: "Zamalek / Maadi Nile Banks",
     targetAudience: "Couples, Friends & Groups",
-    bgGradient: "linear-gradient(180deg, #102B30 0%, #205E66 55%, #4AA6B0 100%)",
+    image: "/photos/kayak.png",
     highlights: [
       "Guided Nile kayaking tour around calm secluded river islands",
       "Safety briefing, life jackets, and rescue boat companion",
@@ -368,14 +320,43 @@ const GEMS_DATA: GemItem[] = [
       "Certified safety life vests & guide instructors",
       "Dockside breakfast or sunset drink",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <path d="M0,200 Q100,180 200,200 T400,200" fill="none" stroke="#F8F5EE" strokeWidth="2" opacity="0.6" />
-        <ellipse cx="200" cy="220" rx="90" ry="12" fill="#DFC99E" opacity="0.85" />
-        <line x1="140" y1="190" x2="260" y2="240" stroke="#F8F5EE" strokeWidth="2.5" opacity="0.9" />
-        <circle cx="200" cy="195" r="12" fill="#F8F5EE" />
-      </svg>
-    ),
+  },
+  {
+    id: "museum-tour",
+    category: "day-trips",
+    categoryLabel: "Day Trip",
+    tag: "Day Trip · Cultural Discovery",
+    title: "Grand Museum & Heritage Tour",
+    subtitle: "Unraveling the wonders of ancient Egypt with master historians",
+    description:
+      "A private guided exploration of Egypt's greatest historical treasures (NMEC / Grand Egyptian Museum / Tahrir Museum) curated with engaging storytelling for all generations.",
+    duration: "Half / Full Day",
+    location: "Grand Egyptian Museum & Giza",
+    targetAudience: "Schools, Families & Cultural Explorers",
+    image: "/photos/museum.png",
+    highlights: [
+      "Private Egyptologist historian guide tailored to the group",
+      "Royal mummies hall and King Tutankhamun galleries",
+      "Interactive scavenger hunt for kids and students",
+      "Lunch at heritage palace restaurant",
+    ],
+    itinerary: [
+      {
+        step: "Part 1",
+        title: "The Royal Treasures",
+        desc: "Guided discovery through colossal statues and golden relics.",
+      },
+      {
+        step: "Part 2",
+        title: "Interactive Storytelling Walk",
+        desc: "Decoding hieroglyphics and secrets of ancient engineering.",
+      },
+    ],
+    included: [
+      "All VIP fast-track museum entry tickets",
+      "Private Egyptologist historian speaker",
+      "Comfortable air-conditioned transport and lunch",
+    ],
   },
   {
     id: "fayoum-daytrip",
@@ -389,7 +370,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day (7 AM – 9 PM)",
     location: "Fayoum & Wadi El Rayan",
     targetAudience: "Families, Friends & Schools",
-    bgGradient: "linear-gradient(180deg, #2D2214 0%, #7A5328 55%, #CFA158 100%)",
+    image: "/photos/fayoum.png",
     highlights: [
       "Wadi El Rayan waterfalls & wooden felucca boat ride",
       "Sandboarding on dunes overlooking Magic Lake",
@@ -419,56 +400,159 @@ const GEMS_DATA: GemItem[] = [
       "All national park permits and boat ride",
       "Full Bedouin lunch meal and beverages",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <path d="M0,220 C70,180 140,240 220,200 C300,170 350,220 400,190 L400,300 L0,300Z" fill="#1E1409" opacity="0.75" />
-        <path d="M120,180 L120,260 M140,175 L140,260" stroke="#DFC99E" strokeWidth="2" opacity="0.8" />
-        <circle cx="310" cy="65" r="22" fill="#F8F5EE" opacity="0.85" />
-      </svg>
-    ),
   },
   {
-    id: "museum-tour",
+    id: "alexandria-daytrip",
     category: "day-trips",
     categoryLabel: "Day Trip",
-    tag: "Day Trip · Cultural Discovery",
-    title: "Heritage & Grand Museum Tour",
-    subtitle: "Unraveling the wonders of ancient Egypt with master historians",
+    tag: "Day Trip · Mediterranean Charm",
+    title: "Alexandria Stanley & Coastal Heritage",
+    subtitle: "Historic Citadel, Stanley Bridge, and iconic Mediterranean seafood",
     description:
-      "A private guided exploration of Egypt's greatest historical treasures (NMEC / Grand Egyptian Museum / Tahrir Museum) curated with engaging storytelling for all generations.",
-    duration: "Half / Full Day",
-    location: "Cairo & Giza",
-    targetAudience: "Schools, Families & Cultural Explorers",
-    bgGradient: "linear-gradient(180deg, #241A10 0%, #684824 55%, #B58A4A 100%)",
+      "Breathe in the Mediterranean breeze on a rich day journey across the Pearl of the Mediterranean. Explore the Citadel of Qaitbay, Bibliotheca Alexandrina, Stanley Bridge, and authentic Greek/Alexandrian seaside dining.",
+    duration: "Full Day (6:30 AM – 9:30 PM)",
+    location: "Alexandria & Stanley Bay",
+    targetAudience: "Families, Friends & Schools",
+    image: "/photos/alexandria.png",
     highlights: [
-      "Private Egyptologist historian guide tailored to the group",
-      "Royal mummies hall and King Tutankhamun galleries",
-      "Interactive scavenger hunt for kids and students",
-      "Lunch at heritage palace restaurant",
+      "Qaitbay Citadel & panoramic Mediterranean sea views",
+      "Bibliotheca Alexandrina guided discovery",
+      "Sunset photo walk over Stanley Bridge",
+      "Fresh Alexandrian seafood banquet by the sea",
     ],
     itinerary: [
       {
-        step: "Part 1",
-        title: "The Royal Treasures",
-        desc: "Guided discovery through colossal statues and golden relics.",
+        step: "Morning",
+        title: "Coastal Drive & Citadel",
+        desc: "Scenic highway travel, fortress tour, and seaside corniche walk.",
       },
       {
-        step: "Part 2",
-        title: "Interactive Storytelling Walk",
-        desc: "Decoding hieroglyphics and secrets of ancient engineering.",
+        step: "Afternoon",
+        title: "Bibliotheca & Seafood Lunch",
+        desc: "Library tour, world-famous fresh fish meal, and ice cream stroll.",
+      },
+      {
+        step: "Sunset",
+        title: "Stanley Bridge & Departure",
+        desc: "Golden hour photo session by Stanley Bridge and return drive.",
       },
     ],
     included: [
-      "All VIP fast-track museum entry tickets",
-      "Private Egyptologist historian speaker",
-      "Comfortable air-conditioned transport and lunch",
+      "VIP Private highway transportation",
+      "All museum and citadel entry tickets",
+      "Deluxe seafood lunch banquet",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <polygon points="120,240 200,120 280,240" fill="none" stroke="#F8F5EE" strokeWidth="2.5" opacity="0.85" />
-        <polygon points="160,240 200,170 240,240" fill="none" stroke="#DFC99E" strokeWidth="2" opacity="0.7" />
-      </svg>
-    ),
+  },
+  {
+    id: "sokhna-daytrip",
+    category: "day-trips",
+    categoryLabel: "Day Trip",
+    tag: "Day Trip · Coastal Day Use",
+    title: "Sokhna Seaside Day Retreat (SO5NA)",
+    subtitle: "Crystal Red Sea waters, private beach lounge & fresh sea breeze",
+    description:
+      "An effortless day escape just 60 minutes from New Cairo. Relax on private sandy beaches, swim in warm turquoise waters, and enjoy a day-use chalet or resort pass with fresh meals and water sports.",
+    duration: "Full Day",
+    location: "Ain Sokhna, Red Sea Coast",
+    targetAudience: "Families, Friends & Corporate Teams",
+    image: "/photos/sokhna.png",
+    highlights: [
+      "Private beachfront day-use access at premier coastal resort",
+      "Swimming pool, sandy beach umbrellas, and sea relaxation",
+      "Jet ski / banana boat water activity options",
+      "Open buffet or fresh grilled seafood lunch",
+    ],
+    itinerary: [
+      {
+        step: "Morning",
+        title: "Beach Arrival & Sunbathing",
+        desc: "Resort check-in, morning swim, and beach loungers.",
+      },
+      {
+        step: "Afternoon",
+        title: "Lunch & Water Fun",
+        desc: "Resort lunch feast, water games, and golden hour sunset.",
+      },
+    ],
+    included: [
+      "Round-trip air-conditioned transportation",
+      "Full resort entrance and beach facilities",
+      "Full lunch meal & fresh refreshments",
+    ],
+  },
+  {
+    id: "portsaid-daytrip",
+    category: "day-trips",
+    categoryLabel: "Day Trip",
+    tag: "Day Trip · Canal Heritage",
+    title: "Port Said & Harbor Walk",
+    subtitle: "Iconic historic lighthouse, ferry crossings, and Mediterranean charm",
+    description:
+      "Discover the unique Franco-Egyptian architecture, the world-famous Suez Canal entry lighthouse, historical ferry cruises, and legendary Port Said street food and seafood.",
+    duration: "Full Day",
+    location: "Port Said & Port Fouad",
+    targetAudience: "Cultural Explorers & Families",
+    image: "/photos/portsaid.png",
+    highlights: [
+      "Historic Port Said Lighthouse & Suez Canal Promenade",
+      "Free ferry boat crossing to Port Fouad and Salt Mountains",
+      "Vintage 19th-century wooden architectural walking tour",
+      "Authentic Port Said seafood and Cassata sweets",
+    ],
+    itinerary: [
+      {
+        step: "Morning",
+        title: "Canal Promenade & Lighthouse",
+        desc: "Arrive in Port Said, walk along the world shipping lane and historic lighthouse.",
+      },
+      {
+        step: "Afternoon",
+        title: "Port Fouad Ferry & Salt Mountains",
+        desc: "Take the classic ferry to Port Fouad, photo stops at Salt Mountain, and lunch feast.",
+      },
+    ],
+    included: [
+      "Private VIP transportation",
+      "Full guided historical city walk",
+      "Specialty Port Said seafood lunch",
+    ],
+  },
+  {
+    id: "ismailia-daytrip",
+    category: "day-trips",
+    categoryLabel: "Day Trip",
+    tag: "Day Trip · Garden City",
+    title: "Ismailia & Suez Canal Heritage",
+    subtitle: "Lush gardens, Lake Timsah sailing, and historic colonial mansions",
+    description:
+      "Known as the City of Gardens, Ismailia offers tranquil lake shores along Lake Timsah, views of giant container ships crossing the Suez Canal, and serene green parks.",
+    duration: "Full Day",
+    location: "Ismailia & Lake Timsah",
+    targetAudience: "Relaxation Seekers & Families",
+    image: "/photos/ismailia.png",
+    highlights: [
+      "Boat tour on Lake Timsah overlooking the Suez Canal",
+      "Walking tour of historic French colonial neighborhood",
+      "Famous Ismailia mango orchards & fresh fruit tastings",
+      "Lakefront club lunch with peaceful water vistas",
+    ],
+    itinerary: [
+      {
+        step: "Morning",
+        title: "Arrival & French Quarter Walk",
+        desc: "Exploring leafy avenues, Ferdinand de Lesseps house, and canal banks.",
+      },
+      {
+        step: "Afternoon",
+        title: "Lake Timsah Cruise & Lunch",
+        desc: "Private boat sail on Lake Timsah, watch giant ships, and club lunch.",
+      },
+    ],
+    included: [
+      "Air-conditioned VIP transport",
+      "Private boat cruise on the lake",
+      "Deluxe lunch and seasonal fruit tastings",
+    ],
   },
 
   // ================= OVERNIGHT ADVENTURES =================
@@ -484,7 +568,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "3 Days / 2 Nights",
     location: "Siwa Oasis, Western Desert",
     targetAudience: "Adventure Seekers, Couples & Groups",
-    bgGradient: "linear-gradient(180deg, #2D2113 0%, #8A5726 55%, #D99C48 100%)",
+    image: "/photos/siwa.png",
     highlights: [
       "Floating in therapeutic turquoise salt lakes",
       "Sunset sandboarding & 4x4 safari across Great Sand Sea",
@@ -514,13 +598,6 @@ const GEMS_DATA: GemItem[] = [
       "All meals (Breakfast, Lunch, Bedouin dinners)",
       "4x4 desert safari & sandboarding gear",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <circle cx="320" cy="55" r="26" fill="#F8F5EE" opacity="0.9" />
-        <path d="M0,230 C70,200 130,240 200,215 C270,190 330,225 400,205 L400,300 L0,300 Z" fill="#2B1E10" opacity="0.6" />
-        <path d="M0,255 C80,225 160,260 240,240 C300,225 350,245 400,235 L400,300 L0,300 Z" fill="#1E1409" opacity="0.75" />
-      </svg>
-    ),
   },
   {
     id: "dahab-overnight",
@@ -534,7 +611,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "4 Days / 3 Nights",
     location: "Dahab & Ras Abu Galum, South Sinai",
     targetAudience: "Youth, Families & Adventure Groups",
-    bgGradient: "linear-gradient(180deg, #0A2E2C 0%, #154D49 55%, #3A968D 100%)",
+    image: "/photos/dahab.png",
     highlights: [
       "Guided snorkeling and diving at Blue Hole & Three Pools",
       "Boat ride to secluded Ras Abu Galum lagoon & Blue Lagoon swim",
@@ -569,13 +646,6 @@ const GEMS_DATA: GemItem[] = [
       "Boat trip & snorkeling gear included",
       "All national park fees and desert guides",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <circle cx="330" cy="50" r="24" fill="#F8F5EE" opacity="0.8" />
-        <path d="M0,200 Q50,180 100,200 T200,200 T300,200 T400,200" stroke="#DFC99E" strokeWidth="2.5" fill="none" opacity="0.8" />
-        <path d="M0,230 Q50,210 100,230 T200,230 T300,230 T400,230" stroke="#F8F5EE" strokeWidth="2" fill="none" opacity="0.7" />
-      </svg>
-    ),
   },
   {
     id: "aswan-overnight",
@@ -589,7 +659,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "4 Days / 3 Nights",
     location: "Aswan & Upper Egypt",
     targetAudience: "Cultural Travelers & Families",
-    bgGradient: "linear-gradient(180deg, #241A0B 0%, #755928 55%, #B8893F 100%)",
+    image: "/photos/aswan.png",
     highlights: [
       "Private sunset felucca sailing with live Nubian music",
       "Island Temple of Isis at Philae & High Dam",
@@ -624,13 +694,133 @@ const GEMS_DATA: GemItem[] = [
       "Private Egyptologist historian guides",
       "All entrance fees and private boat excursions",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice">
-        <path d="M260,240 L340,240 L320,260 L250,260Z" fill="#F8F5EE" opacity="0.85" />
-        <path d="M300,240 L300,195 L325,225Z" fill="#DFC99E" opacity="0.8" />
-        <circle cx="100" cy="80" r="22" fill="#F8F5EE" opacity="0.75" />
-      </svg>
-    ),
+  },
+  {
+    id: "nweibaa-overnight",
+    category: "overnight",
+    categoryLabel: "Overnight Trip",
+    tag: "Overnight · 3 Days / 2 Nights",
+    title: "Nweibaa Coastal & Mountain Camp",
+    subtitle: "Majestic Sinai mountains meeting calm turquoise beach camps",
+    description:
+      "Escape to the untouched coastline of Nuweiba where golden Sinai mountain peaks touch tranquil Red Sea coves. Stay in authentic bamboo beach huts, stargaze, and explore Wishwashi canyon springs.",
+    duration: "3 Days / 2 Nights",
+    location: "Nweibaa & Ras Shaitan, Sinai",
+    targetAudience: "Nature Lovers & Campers",
+    image: "/photos/nweibaa.png",
+    highlights: [
+      "Beachfront bamboo bungalow camp experience",
+      "4x4 safari hike to Wishwashi freshwater canyon oasis",
+      "Campfire acoustic music and Bedouin zarb dinner",
+      "Crystal-clear snorkeling right from the beach shore",
+    ],
+    itinerary: [
+      {
+        step: "Day 1",
+        title: "Sinai Welcome",
+        desc: "Scenic mountain pass drive, check into beach camp, and sunset swim.",
+      },
+      {
+        step: "Day 2",
+        title: "Wishwashi Canyon & Coral Reefs",
+        desc: "Off-road hike to natural freshwater pool, cliff jumps, and beach BBQ.",
+      },
+      {
+        step: "Day 3",
+        title: "Sunrise Meditation & Return",
+        desc: "Calm morning by the water, breakfast, and comfortable return.",
+      },
+    ],
+    included: [
+      "Round-trip air-conditioned transport",
+      "2 nights authentic beach camp accommodations",
+      "All meals and Bedouin campfire dinners",
+      "Canyon safari guides and permits",
+    ],
+  },
+  {
+    id: "sharm-overnight",
+    category: "overnight",
+    categoryLabel: "Overnight Trip",
+    tag: "Overnight · 3 Days / 2 Nights",
+    title: "Sharm El Sheikh Red Sea Escape",
+    subtitle: "World-class coral diving, luxury resorts & Ras Mohamed sanctuary",
+    description:
+      "Experience world-renowned luxury and vibrant coral biodiversity at the tip of South Sinai. Explore Ras Mohamed National Park, yacht excursions, and lively evening promenades.",
+    duration: "3 Days / 2 Nights",
+    location: "Sharm El Sheikh & Ras Mohamed",
+    targetAudience: "Families, Youth & International Visitors",
+    image: "/photos/sharm.png",
+    highlights: [
+      "VIP Yacht sailing trip to Ras Mohamed & White Island",
+      "Snorkeling among rare coral reefs and sea turtles",
+      "Luxury 5-star beachfront resort stay with all amenities",
+      "Night walk across Soho Square and Naama Bay",
+    ],
+    itinerary: [
+      {
+        step: "Day 1",
+        title: "Resort Check-In & Farsha Lounge",
+        desc: "Arrive at 5-star beachfront resort, sunset drinks at iconic cliffside cafe.",
+      },
+      {
+        step: "Day 2",
+        title: "Ras Mohamed Yacht Day",
+        desc: "Full-day luxury yacht cruise, snorkeling sessions, and seafood buffet.",
+      },
+      {
+        step: "Day 3",
+        title: "Desert Quad Safari & Departure",
+        desc: "Morning quad bike ride through Echo Valley and comfortable departure.",
+      },
+    ],
+    included: [
+      "Round-trip transfers",
+      "2 nights 5-star luxury resort accommodation",
+      "Full-day yacht cruise with lunch and snorkeling gear",
+    ],
+  },
+  {
+    id: "hurghada-overnight",
+    category: "overnight",
+    categoryLabel: "Overnight Trip",
+    tag: "Overnight · 3 Days / 2 Nights",
+    title: "Hurghada & Giftun Island Safari",
+    subtitle: "Caribbean-like white sand sandbars and vibrant marina evenings",
+    description:
+      "A sun-drenched coastal retreat featuring boat rides to Orange Bay & Giftun Island, dolphin watching excursions, desert quad biking, and dining by Hurghada Marina.",
+    duration: "3 Days / 2 Nights",
+    location: "Hurghada & Giftun Islands, Red Sea",
+    targetAudience: "Families, Friends & Water Lovers",
+    image: "/photos/hurghada.png",
+    highlights: [
+      "Private boat cruise to Orange Bay / Giftun Island sandbanks",
+      "Snorkeling on pristine offshore coral reefs",
+      "Marina boulevard evening walks and seaside dinners",
+      "Desert sunset safari with Bedouin tea",
+    ],
+    itinerary: [
+      {
+        step: "Day 1",
+        title: "Arrival & Marina Evening",
+        desc: "Resort check-in, pool relaxation, and dinner walk at Hurghada Marina.",
+      },
+      {
+        step: "Day 2",
+        title: "Giftun Island & Orange Bay",
+        desc: "Speedboat ride to white sand island, crystal lagoon swimming, and lunch.",
+      },
+      {
+        step: "Day 3",
+        title: "Desert Safari & Departure",
+        desc: "Morning quad bike desert adventure and comfortable journey back.",
+      },
+    ],
+    included: [
+      "Round-trip transportation",
+      "2 nights resort accommodation",
+      "Island boat tour with lunch and snorkeling equipment",
+    ],
   },
 
   // ================= EVENTS =================
@@ -646,7 +836,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day / Half Day",
     location: "School Campuses / Sports Clubs",
     targetAudience: "Schools, Students & Families",
-    bgGradient: "linear-gradient(180deg, #1A2E26 0%, #356654 55%, #62A68F 100%)",
+    image: "/photos/dragon-island.png",
     highlights: [
       "Custom stage production, sound systems, and fun MC animators",
       "Inflatable obstacle courses, foam zones, and carnival booths",
@@ -675,13 +865,6 @@ const GEMS_DATA: GemItem[] = [
       "All carnival games, inflatables, and materials",
       "Safety managers, organizers, and medical support",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 700 300" preserveAspectRatio="xMidYMax slice">
-        <circle cx="120" cy="140" r="40" fill="none" stroke="#F8F5EE" strokeWidth="2.5" opacity="0.8" />
-        <circle cx="280" cy="120" r="30" fill="none" stroke="#DFC99E" strokeWidth="2.5" opacity="0.8" />
-        <polygon points="450,220 500,120 550,220" fill="none" stroke="#F8F5EE" strokeWidth="2" opacity="0.75" />
-      </svg>
-    ),
   },
   {
     id: "father-mother-child",
@@ -695,7 +878,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day Experience",
     location: "Oasis Lodges / Nature Resorts",
     targetAudience: "Schools, Communities & Families",
-    bgGradient: "linear-gradient(180deg, #302016 0%, #75442A 55%, #BA734C 100%)",
+    image: "/photos/mirror-painting.png",
     highlights: [
       "Parent-child cooperative team challenges & fun relays",
       "Campfire cooking & outdoor marshmallow roasting",
@@ -719,14 +902,6 @@ const GEMS_DATA: GemItem[] = [
       "All craft materials and keepsake frames",
       "Full family banquet meal and refreshments",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 700 300" preserveAspectRatio="xMidYMax slice">
-        <circle cx="300" cy="130" r="28" fill="#F8F5EE" opacity="0.85" />
-        <circle cx="370" cy="160" r="18" fill="#DFC99E" opacity="0.9" />
-        <path d="M260,250 C260,190 340,190 340,250" fill="none" stroke="#F8F5EE" strokeWidth="2.5" opacity="0.8" />
-        <path d="M350,250 C350,210 400,210 400,250" fill="none" stroke="#DFC99E" strokeWidth="2.5" opacity="0.85" />
-      </svg>
-    ),
   },
   {
     id: "team-building-camps",
@@ -740,7 +915,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "1 to 2 Days (With Overnight Option)",
     location: "Fayoum / Sokhna / Wadi Degla",
     targetAudience: "Teachers, Educators & Companies",
-    bgGradient: "linear-gradient(180deg, #1C241B 0%, #3B4D39 55%, #6E8A6A 100%)",
+    image: "/photos/mario-ropes.png",
     highlights: [
       "Customized team synergy games & strategy simulations",
       "Mindfulness, wellness, and stress-relief outdoor sessions",
@@ -750,143 +925,142 @@ const GEMS_DATA: GemItem[] = [
     itinerary: [
       {
         step: "Day 1",
-        title: "Synergy & Outdoor Challenges",
-        desc: "Trust walks, team building ropes, problem solving, and sunset reflection.",
+        title: "Team Alignment & Outdoor Synergy",
+        desc: "Facilitated team communication challenges and trust building.",
       },
       {
         step: "Evening",
-        title: "Gala Dinner & Campfire",
-        desc: "Celebratory banquet, teacher appreciation awards, and live music.",
+        title: "Campfire Reflection & Live Music",
+        desc: "Open-air BBQ dinner, team appreciation awards, and stargazing.",
+      },
+      {
+        step: "Day 2",
+        title: "Action Roadmap & Departure",
+        desc: "Morning wellness stretch, team goal alignment, and wrap-up.",
       },
     ],
     included: [
-      "Exclusive retreat venue booking and accommodations",
-      "Expert team building facilitators and organizers",
-      "Full catering, coffee breaks, and audio-visual setups",
+      "Curated retreat venue & meeting facilities",
+      "Certified organizational development facilitators",
+      "Full catering (Gourmet meals, coffee breaks & snacks)",
     ],
-    sceneSvg: (
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 700 300" preserveAspectRatio="xMidYMax slice">
-        <circle cx="200" cy="180" r="14" fill="#F8F5EE" /><circle cx="280" cy="180" r="14" fill="#DFC99E" />
-        <circle cx="360" cy="180" r="14" fill="#F8F5EE" /><circle cx="440" cy="180" r="14" fill="#DFC99E" />
-        <path d="M160,260 L480,260" stroke="#F8F5EE" strokeWidth="2" opacity="0.6" />
-      </svg>
-    ),
   },
 ];
 
-// --- Simple Clean Inline Icons ---
+// --- SVG Icons Helper ---
 const Icons = {
-  Sparkle: () => <span>✦</span>,
+  Sparkle: () => (
+    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+    </svg>
+  ),
   Calendar: () => (
-    <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" strokeWidth="2" />
-      <line x1="16" y1="2" x2="16" y2="6" strokeWidth="2" />
-      <line x1="8" y1="2" x2="8" y2="6" strokeWidth="2" />
-      <line x1="3" y1="10" x2="21" y2="10" strokeWidth="2" />
+    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+      <line x1="16" y1="2" x2="16" y2="6" />
+      <line x1="8" y1="2" x2="8" y2="6" />
+      <line x1="3" y1="10" x2="21" y2="10" />
     </svg>
   ),
   MapPin: () => (
-    <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" strokeWidth="2" />
-      <circle cx="12" cy="10" r="3" strokeWidth="2" />
-    </svg>
-  ),
-  Check: () => (
-    <svg className="w-4 h-4 text-[#C5A059] inline-block flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <polyline points="20 6 9 17 4 12" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  ),
-  Close: () => (
-    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <line x1="18" y1="6" x2="6" y2="18" strokeWidth="2" strokeLinecap="round" />
-      <line x1="6" y1="6" x2="18" y2="18" strokeWidth="2" strokeLinecap="round" />
-    </svg>
-  ),
-  WhatsApp: () => (
-    <svg className="w-5 h-5 inline-block" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
-    </svg>
-  ),
-  Search: () => (
-    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <circle cx="11" cy="11" r="8" strokeWidth="2" />
-      <line x1="21" y1="21" x2="16.65" y2="16.65" strokeWidth="2" strokeLinecap="round" />
+    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+      <circle cx="12" cy="10" r="3" />
     </svg>
   ),
   ArrowRight: () => (
-    <svg className="w-4 h-4 inline-block transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <line x1="5" y1="12" x2="19" y2="12" strokeWidth="2" strokeLinecap="round" />
-      <polyline points="12 5 19 12 12 19" strokeWidth="2" strokeLinecap="round" />
+    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <line x1="5" y1="12" x2="19" y2="12" />
+      <polyline points="12 5 19 12 12 19" />
+    </svg>
+  ),
+  WhatsApp: () => (
+    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.476-.15-.676.15-.2.301-.777.978-.952 1.179-.176.2-.351.226-.652.075-.301-.15-1.27-.468-2.42-1.493-.895-.798-1.5-1.784-1.676-2.085-.175-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.175.2-.301.3-.501.1-.2.05-.376-.025-.526-.075-.15-.677-1.631-.928-2.235-.244-.588-.493-.508-.677-.517-.175-.009-.376-.009-.576-.009-.2 0-.526.075-.802.376-.276.301-1.053 1.028-1.053 2.508 0 1.48 1.078 2.909 1.229 3.109.15.2 2.122 3.24 5.14 4.544.718.31 1.279.495 1.716.634.721.23 1.378.197 1.897.12.577-.087 1.78-.727 2.03-1.43.25-.702.25-1.304.175-1.43-.075-.125-.276-.2-.576-.35zM12.04 21.785h-.002a9.78 9.78 0 0 1-4.992-1.373l-.358-.213-3.712.973.99-3.618-.233-.37a9.774 9.774 0 0 1-1.5-5.184c0-5.404 4.398-9.803 9.805-9.803 2.617 0 5.078 1.02 6.93 2.871a9.74 9.74 0 0 1 2.868 6.931c0 5.405-4.399 9.804-9.798 9.804z" />
+    </svg>
+  ),
+  Check: () => (
+    <svg className="w-4 h-4 text-[#5E715C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+  ),
+  Close: () => (
+    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <line x1="18" y1="6" x2="6" y2="18" />
+      <line x1="6" y1="6" x2="18" y2="18" />
+    </svg>
+  ),
+  Search: () => (
+    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <circle cx="11" cy="11" r="8" />
+      <line x1="21" y1="21" x2="16.65" y2="16.65" />
     </svg>
   ),
 };
 
-export default function HomePage() {
-  // State
+export default function HiddenGemsOfficialPage() {
   const [selectedCategory, setSelectedCategory] = useState<CategoryType>("all");
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState<string>("");
   const [activeModalGem, setActiveModalGem] = useState<GemItem | null>(null);
 
-  // Form State (100% English)
+  // Form State for Tailored Inquiry
   const [formName, setFormName] = useState("");
   const [formPhone, setFormPhone] = useState("");
-  const [formType, setFormType] = useState("Event (Back to school, Sports day, Camp)");
-  const [formGuests, setFormGuests] = useState("School Class / Small Group (10 - 25)");
+  const [formType, setFormType] = useState("Events (Back to school, Sports day, Family)");
+  const [formGuests, setFormGuests] = useState("Individual / Small Family (1 - 5)");
   const [formNotes, setFormNotes] = useState("");
   const [formSuccess, setFormSuccess] = useState(false);
 
-  // Filter items
+  // Filter gems based on category and search query
   const filteredGems = useMemo(() => {
     return GEMS_DATA.filter((gem) => {
-      const matchesCat =
-        selectedCategory === "all" ||
-        gem.category === selectedCategory ||
-        (selectedCategory === "day-trips" && gem.category === "day-trips") ||
-        (selectedCategory === "overnight" && gem.category === "overnight");
-
-      const matchesSearch =
+      const matchCategory = selectedCategory === "all" || gem.category === selectedCategory;
+      const matchSearch =
+        searchQuery.trim() === "" ||
         gem.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        gem.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        gem.subtitle.toLowerCase().includes(searchQuery.toLowerCase()) ||
         gem.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        gem.tag.toLowerCase().includes(searchQuery.toLowerCase());
-      return matchesCat && matchesSearch;
+        gem.description.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchCategory && matchSearch;
     });
   }, [selectedCategory, searchQuery]);
 
-  // Handle Form Submit (Formatted in English to WhatsApp 01278886151)
+  // Handle Form Submit -> Direct WhatsApp Link with pre-filled English message
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formName.trim() || !formPhone.trim()) return;
 
-    const message =
-      `*New Booking / Inquiry - Hidden Gems Egypt*\n\n` +
-      `👤 *Name / Organization:* ${formName.trim()}\n` +
-      `📞 *Phone / WhatsApp:* ${formPhone.trim()}\n` +
-      `🚪 *Experience / Service:* ${formType}\n` +
-      `👥 *Estimated Group Size:* ${formGuests}\n` +
-      (formNotes.trim() ? `📝 *Notes & Preferred Dates:* ${formNotes.trim()}\n\n` : "\n") +
-      `_Sent from Hidden Gems Website_`;
+    const message = `*🌟 New Experience Inquiry — Hidden Gems Website*
+━━━━━━━━━━━━━━━━━━━━
+👤 *Name / Organization:* ${formName.trim()}
+📞 *Phone / WhatsApp:* ${formPhone.trim()}
+🏷️ *Category of Interest:* ${formType}
+👥 *Estimated Group Size:* ${formGuests}
+📝 *Notes / Special Requests:* ${formNotes.trim() || "None specified"}
+━━━━━━━━━━━━━━━━━━━━
+_Sent via Hidden Gems Official Web Booking_`;
 
-    const waUrl = `https://wa.me/${HIDDEN_GEMS_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-    window.open(waUrl, "_blank");
-
+    const whatsappUrl = `https://wa.me/${HIDDEN_GEMS_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     setFormSuccess(true);
-    setTimeout(() => setFormSuccess(false), 5000);
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank");
+      setFormSuccess(false);
+    }, 800);
   };
 
-  // Direct WhatsApp for a specific Gem (in English)
+  // Direct Gem Inquiry Handler (WhatsApp)
   const handleDirectGemBook = (gem: GemItem) => {
-    const message =
-      `*Hello Hidden Gems!*\n\n` +
-      `I would like to inquire about the following experience:\n\n` +
-      `🌟 *Experience:* ${gem.title}\n` +
-      `📍 *Location:* ${gem.location}\n` +
-      `⏳ *Duration:* ${gem.duration}\n` +
-      `🎯 *Category:* ${gem.categoryLabel}\n\n` +
-      `Please share available dates, customized schedules, and booking details!`;
+    const message = `*🌟 Inquiring About Experience:* ${gem.title}
+━━━━━━━━━━━━━━━━━━━━
+🏷️ *Category:* ${gem.categoryLabel}
+📍 *Location:* ${gem.location}
+⏳ *Duration:* ${gem.duration}
+👥 *Target Group:* ${gem.targetAudience || "Customizable"}
+━━━━━━━━━━━━━━━━━━━━
+Hello Hidden Gems Team, I would like to inquire about available dates, customized program details, and booking for *${gem.title}*.`;
 
-    const waUrl = `https://wa.me/${HIDDEN_GEMS_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-    window.open(waUrl, "_blank");
+    const whatsappUrl = `https://wa.me/${HIDDEN_GEMS_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -968,70 +1142,49 @@ export default function HomePage() {
             <a
               href="#gems"
               onClick={() => setSelectedCategory("all")}
-              className="bg-[#2C3E2D] hover:bg-[#1D2A1E] text-[#FAF5EF] px-8 py-4 rounded-full text-xs uppercase tracking-[0.16em] font-semibold transition-all duration-300 shadow-md hover:shadow-xl border border-[#C5A059]/40 flex items-center gap-2 group"
+              className="inline-flex items-center gap-2.5 bg-[#2C3E2D] hover:bg-[#1D2A1E] text-[#FAF5EF] px-8 py-3.5 rounded-full text-xs font-semibold uppercase tracking-[0.16em] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
             >
               <span>Explore All Experiences</span>
               <Icons.ArrowRight />
             </a>
             <a
               href="#contact"
-              className="bg-[#FAF6F0] hover:bg-white text-[#2C3E2D] px-8 py-4 rounded-full text-xs uppercase tracking-[0.16em] font-semibold transition-all duration-300 shadow-sm hover:shadow-md border border-[#2C3E2D]/20"
+              className="inline-flex items-center gap-2 border border-[#C5A059]/40 bg-white/70 hover:bg-white text-[#2C3E2D] px-8 py-3.5 rounded-full text-xs font-semibold uppercase tracking-[0.16em] transition-all duration-300 hover:scale-105"
             >
-              Plan a Custom Event
+              <span>Plan a Custom Event</span>
             </a>
           </div>
         </div>
       </section>
 
-      {/* ================= MARQUEE TICKER ================= */}
-      <div className="border-y border-[#C5A059]/25 bg-[#F3ECE1] py-4 overflow-hidden shadow-xs">
-        <div className="animate-marquee items-center">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} className="flex items-center gap-8 mx-4 text-xs sm:text-sm font-serif-luxury uppercase tracking-[0.2em] text-[#2C3E2D] font-semibold">
-              <span>Color Your Own Character</span>
-              <span className="text-[#C5A059]">✦</span>
-              <span>Dragon Island &amp; Mario Ropes</span>
-              <span className="text-[#C5A059]">✦</span>
-              <span>Mirror Painting</span>
-              <span className="text-[#C5A059]">✦</span>
-              <span>Fayoum, Siwa &amp; Dahab</span>
-              <span className="text-[#C5A059]">✦</span>
-              <span>Father &amp; Child Days</span>
-              <span className="text-[#C5A059]">✦</span>
-              <span>Teachers Team Building</span>
-              <span className="text-[#C5A059]">✦</span>
-            </div>
-          ))}
+      {/* ================= PHILOSOPHY SECTION ================= */}
+      <section id="philosophy" className="py-20 px-6 border-y border-[#C5A059]/20 bg-[#F3ECE1]/60">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="font-serif-luxury italic text-[#C5A059] text-xl mb-3">Our Core Belief</p>
+          <blockquote className="font-serif-luxury text-2xl sm:text-3xl md:text-4xl text-[#2C3E2D] font-normal leading-relaxed italic mb-6">
+            &ldquo;Every person has a hidden gem within them. Every experience is an opportunity to discover it.&rdquo;
+          </blockquote>
+          <div className="w-16 h-[2px] bg-[#C5A059] mx-auto my-6"></div>
+          <p className="text-sm sm:text-base text-[#4A5A48] font-light leading-relaxed max-w-2xl mx-auto">
+            We don&apos;t just organize trips and events — we craft thoughtful journeys that spark creativity, deepen bonds, and awaken the extraordinary inside every student, educator, team member, and explorer.
+          </p>
         </div>
-      </div>
-
-      {/* ================= PHILOSOPHY / THE THREE DOORS OVERVIEW ================= */}
-      <section id="philosophy" className="py-24 px-6 max-w-5xl mx-auto text-center">
-        <p className="font-serif-luxury italic text-[#C5A059] text-xl mb-3">Our Core Philosophy</p>
-        <h2 className="font-serif-luxury text-3xl sm:text-4xl md:text-5xl uppercase tracking-[0.08em] text-[#2C3E2D] font-medium leading-tight">
-          &ldquo;Every person has a hidden gem within them. Every experience is an opportunity to discover it.&rdquo;
-        </h2>
-        <div className="w-16 h-[2px] bg-[#C5A059] mx-auto my-6"></div>
-
-        <p className="text-[#4A5A48] text-base sm:text-lg font-light leading-relaxed max-w-3xl mx-auto">
-          We discover places through events and trips. During our trips and events, we visit hidden gems.
-        </p>
       </section>
 
-      {/* ================= THREE DOORS ARCH CARDS ================= */}
-      <section id="doors" className="py-20 px-6 bg-[#F3ECE1] my-6 rounded-3xl max-w-7xl mx-auto shadow-xs">
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <p className="font-serif-luxury italic text-[#C5A059] text-lg mb-2">What we create</p>
+      {/* ================= THREE DOORS SECTION ================= */}
+      <section id="doors" className="py-24 px-6 max-w-7xl mx-auto w-full">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <p className="font-serif-luxury italic text-[#C5A059] text-lg mb-2">Choose your pathway</p>
           <h2 className="font-serif-luxury text-3xl sm:text-4xl md:text-5xl uppercase tracking-[0.1em] text-[#2C3E2D]">
-            Three Doors
+            Three Doors of Discovery
           </h2>
-          <div className="w-16 h-[2px] bg-[#C5A059] mx-auto my-6"></div>
+          <div className="w-16 h-[2px] bg-[#C5A059] mx-auto my-5"></div>
           <p className="text-sm sm:text-base text-[#4A5A48] font-light">
-            Every door unlocks a specialized set of curated experiences.
+            Each door opens into a specialized world of curated moments tailored for schools, families, and organizations.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Door 1: EVENTS (Sage Green) */}
           <div
             className="door-card-container cursor-pointer"
@@ -1050,13 +1203,11 @@ export default function HomePage() {
               </h3>
               <div className="w-10 h-[1px] bg-[#C5A059] my-2"></div>
               <ul className="text-xs text-[#4A5A48] font-light space-y-2 text-left w-full my-4 pl-4 list-disc marker:text-[#5E715C]">
-                <li>Back to School Festivals</li>
-                <li>End of Year Celebrations</li>
-                <li>Father &amp; Child Bonding Days</li>
-                <li>Mother &amp; Child Bonding Days</li>
-                <li>Sports Days &amp; Active Tournaments</li>
-                <li>Overnight Camps</li>
-                <li>Teachers &amp; Corporate Team Building</li>
+                <li>Back to School Festivals &amp; Welcoming Days</li>
+                <li>Father / Mother &amp; Child Bonding Adventures</li>
+                <li>Teachers &amp; Corporate Team Building Camps</li>
+                <li>Youth Sports Days &amp; Inflatable Tournaments</li>
+                <li>End of Year Celebrations &amp; Graduations</li>
               </ul>
               <div className="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] font-semibold text-[#5E715C] group-hover:text-[#2C3E2D] transition-colors">
                 <span>View Events</span>
@@ -1065,7 +1216,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Door 2: TRIPS (Sky Blue / Sand) */}
+          {/* Door 2: TRIPS (Ocean Blue) */}
           <div
             className="door-card-container cursor-pointer"
             onClick={() => {
@@ -1083,12 +1234,12 @@ export default function HomePage() {
               </h3>
               <div className="w-10 h-[1px] bg-[#C5A059] my-2"></div>
               <ul className="text-xs text-[#4A5A48] font-light space-y-2 text-left w-full my-4 pl-4 list-disc marker:text-[#3A7885]">
+                <li>Dragon Island &amp; Mario Ropes</li>
                 <li>Fayoum Waterfalls &amp; Magic Lake</li>
                 <li>Siwa Oasis Desert Safari</li>
                 <li>Aswan &amp; Nile Felucca Sailing</li>
-                <li>Dahab &amp; Blue Hole Lagoon</li>
-                <li>Port Said &amp; Ismailia Heritage</li>
-                <li>Sokhna Seaside Day Use</li>
+                <li>Dahab, Nuweiba &amp; Blue Hole</li>
+                <li>Alexandria &amp; Sokhna Coastal Trips</li>
                 <li>Hurghada &amp; Sharm El Sheikh</li>
               </ul>
               <div className="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] font-semibold text-[#3A7885] group-hover:text-[#2C3E2D] transition-colors">
@@ -1119,9 +1270,8 @@ export default function HomePage() {
                 <li>Color Your Own Character</li>
                 <li>Mirror Painting Art</li>
                 <li>Arts &amp; Crafts &amp; Custom Beading</li>
-                <li>Character Building Challenges</li>
-                <li>Career Coaching &amp; Strengths Discovery</li>
-                <li>Painting &amp; Color Theory</li>
+                <li>Character Building &amp; Coaching</li>
+                <li>Pottery &amp; Clay Modeling</li>
               </ul>
               <div className="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] font-semibold text-[#A8583B] group-hover:text-[#2C3E2D] transition-colors">
                 <span>View Workshops</span>
@@ -1141,7 +1291,7 @@ export default function HomePage() {
           </h2>
           <div className="w-16 h-[2px] bg-[#C5A059] mx-auto my-5"></div>
           <p className="text-sm sm:text-base text-[#4A5A48] font-light">
-            Tap any card to view the complete schedule, what&apos;s included, and inquire directly with our team.
+            Tap any card to view the complete schedule, authentic photos, what&apos;s included, and inquire directly with our team.
           </p>
         </div>
 
@@ -1215,26 +1365,27 @@ export default function HomePage() {
               <div
                 key={gem.id}
                 onClick={() => setActiveModalGem(gem)}
-                className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col justify-between cursor-pointer border border-[#C5A059]/25 hover:-translate-y-2 bg-[#2B2B26] text-[#FAF5EF]"
-                style={{ minHeight: "360px" }}
+                className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col justify-between cursor-pointer border border-[#C5A059]/25 hover:-translate-y-2 bg-[#1A1C18] text-[#FAF5EF]"
+                style={{ minHeight: "380px" }}
               >
-                {/* Background Artwork */}
-                <div className="absolute inset-0 z-0" style={{ background: gem.bgGradient }}></div>
-
-                {/* SVG Landscape Art */}
-                <div className="absolute inset-0 z-0 transition-transform duration-700 group-hover:scale-105">
-                  {gem.sceneSvg}
+                {/* Real High-Resolution Photo Background with smooth zoom on hover */}
+                <div className="absolute inset-0 z-0 overflow-hidden">
+                  <img
+                    src={gem.image}
+                    alt={gem.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
                 </div>
 
-                {/* Gradient Vignette overlay for text readability */}
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#1A1C18] via-[#1A1C18]/60 to-transparent"></div>
+                {/* Elegant Dark Vignette Overlay for maximum text readability and luxury contrast */}
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#121410] via-[#1A1C18]/65 to-black/35 group-hover:via-[#1A1C18]/50 transition-colors duration-500"></div>
 
                 {/* Top Badge Row */}
                 <div className="relative z-20 p-6 flex items-center justify-between">
-                  <span className="px-3.5 py-1 rounded-full text-[11px] font-semibold uppercase tracking-[0.14em] bg-black/40 backdrop-blur-md text-[#DFC99E] border border-[#DFC99E]/30">
+                  <span className="px-3.5 py-1 rounded-full text-[11px] font-semibold uppercase tracking-[0.14em] bg-black/60 backdrop-blur-md text-[#DFC99E] border border-[#DFC99E]/40 shadow-sm">
                     {gem.categoryLabel}
                   </span>
-                  <span className="text-xs text-[#FAF5EF]/90 font-light flex items-center gap-1 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+                  <span className="text-xs text-[#FAF5EF] font-medium flex items-center gap-1.5 bg-black/60 backdrop-blur-md px-3.5 py-1 rounded-full border border-white/20 shadow-sm">
                     <Icons.Calendar />
                     <span>{gem.duration}</span>
                   </span>
@@ -1242,20 +1393,23 @@ export default function HomePage() {
 
                 {/* Bottom Content Area */}
                 <div className="relative z-20 p-6 pt-0">
-                  <p className="text-xs font-serif-luxury italic text-[#DFC99E] mb-1">{gem.location}</p>
-                  <h3 className="font-serif-luxury text-2xl uppercase tracking-[0.08em] font-semibold text-[#FAF5EF] mb-2 leading-tight group-hover:text-[#DFC99E] transition-colors">
+                  <p className="text-xs font-serif-luxury italic text-[#DFC99E] mb-1 flex items-center gap-1">
+                    <Icons.MapPin />
+                    <span>{gem.location}</span>
+                  </p>
+                  <h3 className="font-serif-luxury text-2xl uppercase tracking-[0.08em] font-semibold text-[#FAF5EF] mb-2 leading-tight group-hover:text-[#DFC99E] transition-colors drop-shadow-md">
                     {gem.title}
                   </h3>
-                  <p className="text-xs text-[#FAF5EF]/80 font-light leading-relaxed line-clamp-2 mb-4">
+                  <p className="text-xs text-[#FAF5EF]/90 font-light leading-relaxed line-clamp-2 mb-4 drop-shadow-sm">
                     {gem.subtitle}
                   </p>
 
-                  <div className="pt-3 border-t border-white/15 flex items-center justify-between">
+                  <div className="pt-3 border-t border-white/20 flex items-center justify-between">
                     <span className="text-[11px] text-[#DFC99E] font-medium tracking-wide">
                       {gem.targetAudience || "Customizable"}
                     </span>
 
-                    <button className="px-4 py-2 rounded-full bg-[#DFC99E] hover:bg-[#FAF5EF] text-[#2C3E2D] text-[11px] font-semibold uppercase tracking-[0.14em] transition-all flex items-center gap-1.5 shadow-xs cursor-pointer">
+                    <button className="px-4 py-2 rounded-full bg-[#DFC99E] hover:bg-[#FAF5EF] text-[#2C3E2D] text-[11px] font-semibold uppercase tracking-[0.14em] transition-all flex items-center gap-1.5 shadow-md cursor-pointer group-hover:scale-105">
                       <span>View &amp; Inquire</span>
                       <Icons.ArrowRight />
                     </button>
@@ -1267,40 +1421,41 @@ export default function HomePage() {
         )}
       </section>
 
-      {/* ================= MODAL: DETAILS & INQUIRY POPUP (ALL ENGLISH) ================= */}
+      {/* ================= MODAL: DETAILS & INQUIRY POPUP (WITH REAL PHOTO) ================= */}
       {activeModalGem && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200">
           <div
             className="bg-[#FAF5EF] w-full max-w-3xl rounded-3xl shadow-2xl overflow-hidden border border-[#C5A059]/40 max-h-[90vh] flex flex-col relative animate-in zoom-in-95 duration-300"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Modal Header Artwork */}
-            <div
-              className="relative h-48 sm:h-56 p-6 flex flex-col justify-between text-[#FAF5EF] overflow-hidden flex-shrink-0"
-              style={{ background: activeModalGem.bgGradient }}
-            >
-              <div className="absolute inset-0 opacity-70">{activeModalGem.sceneSvg}</div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1A1C18] via-[#1A1C18]/40 to-transparent"></div>
+            {/* Modal Header Artwork with Real Photo */}
+            <div className="relative h-56 sm:h-64 p-6 flex flex-col justify-between text-[#FAF5EF] overflow-hidden flex-shrink-0">
+              <img
+                src={activeModalGem.image}
+                alt={activeModalGem.title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#151713] via-[#1A1C18]/60 to-black/40"></div>
 
               {/* Close button */}
               <button
                 onClick={() => setActiveModalGem(null)}
-                className="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-black/50 text-[#FAF5EF] hover:bg-black/80 flex items-center justify-center transition-colors border border-white/20 cursor-pointer"
+                className="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-black/60 text-[#FAF5EF] hover:bg-black flex items-center justify-center transition-colors border border-white/20 cursor-pointer shadow-lg"
               >
                 <Icons.Close />
               </button>
 
               <div className="relative z-20">
-                <span className="px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-[0.14em] bg-black/50 backdrop-blur-md text-[#DFC99E] border border-[#DFC99E]/30">
+                <span className="px-3.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-[0.14em] bg-black/60 backdrop-blur-md text-[#DFC99E] border border-[#DFC99E]/40 shadow-sm">
                   {activeModalGem.tag}
                 </span>
               </div>
 
               <div className="relative z-20">
-                <h2 className="font-serif-luxury text-2xl sm:text-4xl uppercase tracking-[0.08em] font-semibold text-[#FAF5EF]">
+                <h2 className="font-serif-luxury text-2xl sm:text-4xl uppercase tracking-[0.08em] font-semibold text-[#FAF5EF] drop-shadow-lg">
                   {activeModalGem.title}
                 </h2>
-                <p className="text-xs sm:text-sm text-[#DFC99E] font-light flex items-center gap-2 mt-1">
+                <p className="text-xs sm:text-sm text-[#DFC99E] font-light flex items-center gap-2 mt-1 drop-shadow-sm">
                   <Icons.MapPin />
                   <span>{activeModalGem.location}</span>
                   <span>•</span>
@@ -1343,7 +1498,7 @@ export default function HomePage() {
                 </h4>
                 <div className="space-y-3">
                   {activeModalGem.itinerary.map((step, idx) => (
-                    <div key={idx} className="flex gap-4 p-3.5 rounded-xl bg-white border border-[#C5A059]/20">
+                    <div key={idx} className="flex gap-4 p-3.5 rounded-xl bg-white border border-[#C5A059]/20 shadow-xs">
                       <span className="font-serif-luxury text-xs font-bold text-[#C5A059] uppercase min-w-[70px]">
                         {step.step}
                       </span>
@@ -1461,9 +1616,9 @@ export default function HomePage() {
                       className="w-full px-4 py-3.5 rounded-xl bg-[#FAF5EF] text-[#2B2D26] text-sm focus:outline-none focus:ring-2 focus:ring-[#C5A059] shadow-sm font-medium cursor-pointer"
                     >
                       <option value="Events (Back to school, Sports day, Family)">Events (Back to school, Sports day, Camps)</option>
-                      <option value="Day Trip (Dragon Island, Mario Ropes, Kayaking, Fayoum)">Day Trips (Dragon Island, Mario Ropes, Fayoum)</option>
-                      <option value="Overnight Trip (Siwa, Dahab, Aswan, Nweibaa)">Overnight Adventures (Siwa, Dahab, Aswan, Nweibaa)</option>
-                      <option value="Workshop (Color Character, Mirror Painting, Crafts)">Workshops (Color Character, Mirror Painting, Crafts)</option>
+                      <option value="Day Trip (Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Dragon Island, Mario Ropes, Fayoum, Alex...)</option>
+                      <option value="Overnight Trip (Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Siwa, Dahab, Aswan, Nuweiba...)</option>
+                      <option value="Workshop (Color Character, Mirror Painting, Crafts & Beading)">Workshops (Color Character, Mirror Painting, Crafts)</option>
                       <option value="Teachers & Corporate Team Building">Teachers &amp; Corporate Team Building</option>
                       <option value="Custom Tailored Experience">Custom Tailored Experience</option>
                     </select>
