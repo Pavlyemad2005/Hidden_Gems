@@ -166,7 +166,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "2 - 4 Hours / Half-Day",
     location: "Schools / Academies / Retreats",
     targetAudience: "Students, Schools & Youth Camps",
-    image: "/photos/mario-ropes.png",
+    image: "/photos/character-building.png",
     highlights: [
       "Gamified team leadership and problem-solving simulations",
       "Public speaking, active listening, and peer collaboration exercises",
