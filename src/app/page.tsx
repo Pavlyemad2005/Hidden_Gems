@@ -878,7 +878,7 @@ const GEMS_DATA: GemItem[] = [
     duration: "Full Day Experience",
     location: "Oasis Lodges / Nature Resorts",
     targetAudience: "Schools, Communities & Families",
-    image: "/photos/color-character.png",
+    image: "/photos/family-bonding.png",
     highlights: [
       "Parent-child cooperative team challenges & fun relays",
       "Campfire cooking & outdoor marshmallow roasting",
