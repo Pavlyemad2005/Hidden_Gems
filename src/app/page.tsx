@@ -238,6 +238,48 @@ const GEMS_DATA: GemItem[] = [
       "Future career milestone roadmap",
     ],
   },
+  {
+    id: "self-discover-workshop",
+    category: "workshops",
+    categoryLabel: "Workshop",
+    tag: "Workshop · Mindset & Self-Discovery",
+    title: "Self Discover",
+    subtitle: "Mindset journaling, inner growth, passion mapping & guided reflections",
+    description:
+      "An intimate guided self-discovery experience designed to cultivate mindful awareness, clarify personal core values, unblock creative potential, and design a purposeful growth roadmap through guided journaling exercises and group reflections.",
+    duration: "2 - 3 Hours",
+    location: "Studio / Garden Lounge / School / Retreat",
+    targetAudience: "Teens, Young Adults, Students & Organizations",
+    image: "/photos/self-discover.png",
+    highlights: [
+      "Custom Self Discover guided journals, prompts & reflection stationery",
+      "Values clarification, mindset vision mapping & life goal frameworks",
+      "Cozy ambient setup with warm herbal tea, candles & mindfulness music",
+      "Empowering sharing circle and personalized growth action plan",
+    ],
+    itinerary: [
+      {
+        step: "Part 1",
+        title: "Mindset & Grounding",
+        desc: "Guided mindfulness centering, gratitude journaling, and unpacking personal strengths.",
+      },
+      {
+        step: "Part 2",
+        title: "Passion & Values Mapping",
+        desc: "Deep-dive prompts mapping core values, vision boards, and emotional awareness.",
+      },
+      {
+        step: "Part 3",
+        title: "Growth Roadmap & Affirmations",
+        desc: "Crafting daily intentional habits, future goal pledges, and take-home journal keepsake.",
+      },
+    ],
+    included: [
+      "Personalized hardcover spiral Self Discover journal and stationery kit",
+      "Certified life coach & developmental facilitator",
+      "Warm beverages, herbal teas, and ambient lounge setup",
+    ],
+  },
 
   // ================= DAY TRIPS =================
   {
@@ -1430,6 +1472,8 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
               <span className="text-[#C5A059]">✦</span>
               <span>Ras Sudr Kitesurfing</span>
               <span className="text-[#C5A059]">✦</span>
+              <span>Self Discover Sessions</span>
+              <span className="text-[#C5A059]">✦</span>
               <span>Color Your Own Character</span>
               <span className="text-[#C5A059]">✦</span>
               <span>Dragon Island &amp; Mario Ropes</span>
@@ -1557,11 +1601,11 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
               </h3>
               <div className="w-10 h-[1px] bg-[#C5A059] my-2"></div>
               <ul className="text-xs text-[#4A5A48] font-light space-y-2 text-left w-full my-4 pl-4 list-disc marker:text-[#A8583B]">
+                <li>Self Discover &amp; Mindset Journaling</li>
                 <li>Color Your Own Character</li>
                 <li>Mirror Painting Art</li>
                 <li>Arts &amp; Crafts &amp; Custom Beading</li>
                 <li>Character Building &amp; Coaching</li>
-                <li>Pottery &amp; Clay Modeling</li>
               </ul>
               <div className="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] font-semibold text-[#A8583B] group-hover:text-[#2C3E2D] transition-colors">
                 <span>View Workshops</span>
@@ -1908,7 +1952,7 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
                       <option value="Events (Back to school, Sports day, Family)">Events (Back to school, Sports day, Camps)</option>
                       <option value="Day Trip (Africano Park, Corona Factory, Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Africano Park, Corona Factory, Wadi Degla...)</option>
                       <option value="Overnight Trip (Ras Sudr, Beit El Wadi, Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Ras Sudr, Beit El Wadi, Siwa...)</option>
-                      <option value="Workshop (Color Character, Mirror Painting, Crafts & Beading)">Workshops (Color Character, Mirror Painting, Crafts)</option>
+                      <option value="Workshop (Self Discover, Color Character, Mirror Painting, Crafts & Beading)">Workshops (Self Discover, Color Character, Mirror Painting...)</option>
                       <option value="Teachers & Corporate Team Building">Teachers &amp; Corporate Team Building</option>
                       <option value="Custom Tailored Experience">Custom Tailored Experience</option>
                     </select>
