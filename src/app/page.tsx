@@ -787,6 +787,136 @@ const GEMS_DATA: GemItem[] = [
 
   // ================= OVERNIGHT ADVENTURES =================
   {
+    id: "fayoum-overnight",
+    category: "overnight",
+    categoryLabel: "Overnight Trip",
+    tag: "Overnight · 2 Days / 1 Night",
+    title: "Fayoum",
+    subtitle: "Magic Lake campfires, sandboarding dunes, waterfalls & eco-lodge retreat",
+    description:
+      "Experience the magic of Fayoum over two unforgettable days. Explore Wadi El Rayan waterfalls, ride 4x4 dunes to Magic Lake, sandboard down golden slopes, sleep under starry desert skies at an authentic eco-lodge or desert camp, and explore Tunis pottery village.",
+    duration: "2 Days / 1 Night",
+    location: "Fayoum & Wadi El Rayan",
+    targetAudience: "Schools, Families, Youth & Adventure Seekers",
+    image: "/photos/fayoum.png",
+    highlights: [
+      "Wadi El Rayan waterfalls, wooden felucca boat ride & Magic Lake safari",
+      "Overnight eco-lodge or desert glamping camp under the stars",
+      "Sandboarding on soft desert dunes & 4x4 off-road adventure",
+      "Evening Bedouin campfire BBQ feast, marshmallow roasting & stargazing",
+      "Tunis pottery village creative studio tour & pottery making",
+    ],
+    itinerary: [
+      {
+        step: "Day 1",
+        title: "Waterfalls, Dunes & Magic Lake",
+        desc: "Scenic drive to Fayoum, visiting waterfalls, 4x4 desert safari to Magic Lake, sandboarding, and sunset tea.",
+      },
+      {
+        step: "Night 1",
+        title: "Campfire BBQ & Desert Stargazing",
+        desc: "Traditional Bedouin charcoal BBQ dinner, campfire circle, music, and overnight stay at eco-lodge/camp.",
+      },
+      {
+        step: "Day 2",
+        title: "Tunis Village Pottery & Return",
+        desc: "Morning breakfast, exploring Tunis village pottery workshops, lunch by the lake, and comfortable return drive.",
+      },
+    ],
+    included: [
+      "Round-trip VIP air-conditioned transportation",
+      "1 night accommodation at authentic eco-lodge / desert camp",
+      "All meals (Breakfast, Lunches, Bedouin BBQ Dinner & Beverages)",
+      "4x4 desert safari, sandboards & national park entry permits",
+    ],
+  },
+  {
+    id: "sokhna-overnight",
+    category: "overnight",
+    categoryLabel: "Overnight Trip",
+    tag: "Overnight · 2 Days / 1 Night",
+    title: "Sokhna",
+    subtitle: "Red Sea beachfront resort stay, water sports & sunset campfire by the sea",
+    description:
+      "An effortless two-day coastal retreat just an hour from Cairo. Relax at a premier beachfront resort, enjoy swimming pools and sandy beaches, take part in jet ski and water sports, and enjoy a seaside BBQ dinner and starlit evening.",
+    duration: "2 Days / 1 Night",
+    location: "Ain Sokhna, Red Sea Coast",
+    targetAudience: "Families, Friends, Schools & Corporate Teams",
+    image: "/photos/sokhna.png",
+    highlights: [
+      "1 night luxury beachfront resort / chalet accommodation",
+      "Private sandy beach relaxation, swimming pools & sea activities",
+      "Water sports options: jet ski, banana boat & paddleboarding",
+      "Seaside evening BBQ dinner, beach bonfire & golden hour sunset",
+    ],
+    itinerary: [
+      {
+        step: "Day 1",
+        title: "Resort Arrival & Beach Fun",
+        desc: "Check-in to beachfront resort, beach games, swimming, water sports, and golden sunset relaxation.",
+      },
+      {
+        step: "Night 1",
+        title: "Seaside BBQ Dinner & Bonfire",
+        desc: "Fresh grilled seafood/meat banquet, beach bonfire, music, and overnight stay.",
+      },
+      {
+        step: "Day 2",
+        title: "Morning Pool & Beach Departure",
+        desc: "Buffet breakfast, morning swim, beach relaxation, fresh lunch, and afternoon return drive.",
+      },
+    ],
+    included: [
+      "Round-trip private air-conditioned transportation",
+      "1 night stay in premium beachfront resort rooms / chalets",
+      "All meals (Breakfast, Lunches, BBQ Dinner & Drinks)",
+      "Full resort beach & pool facility access",
+    ],
+  },
+  {
+    id: "alexandria-overnight",
+    category: "overnight",
+    categoryLabel: "Overnight Trip",
+    tag: "Overnight · 2 Days / 1 Night",
+    title: "Alexandria",
+    subtitle: "Mediterranean sea-view hotel stay, historic citadels & coastal seafood dining",
+    description:
+      "Immerse in the timeless Mediterranean charm of Alexandria over a rich two-day journey. Stay in a sea-view hotel along the Corniche, explore the Citadel of Qaitbay and Bibliotheca Alexandrina, stroll across Stanley Bridge at night, and savor legendary Alexandrian seafood banquets.",
+    duration: "2 Days / 1 Night",
+    location: "Alexandria & Stanley Bay",
+    targetAudience: "Schools, Families, Cultural Explorers & Groups",
+    image: "/photos/alexandria.png",
+    highlights: [
+      "1 night sea-view hotel stay along the historic Alexandrian Corniche",
+      "Citadel of Qaitbay, Bibliotheca Alexandrina & Montazah Gardens",
+      "Nighttime walk over illuminated Stanley Bridge & seaside cafes",
+      "Authentic fresh Alexandrian seafood banquets & Greek patisserie stops",
+    ],
+    itinerary: [
+      {
+        step: "Day 1",
+        title: "Coastal Journey, Citadel & Seafood",
+        desc: "Scenic drive to Alexandria, Qaitbay Citadel tour, seafood lunch, hotel check-in, and evening corniche stroll.",
+      },
+      {
+        step: "Night 1",
+        title: "Stanley Bridge & Evening Promenade",
+        desc: "Illuminated Stanley Bridge photo walk, Alexandrian ice cream & sweets, and seaside dinner.",
+      },
+      {
+        step: "Day 2",
+        title: "Bibliotheca, Montazah & Return",
+        desc: "Buffet breakfast, Bibliotheca Alexandrina guided tour, Montazah palace gardens walk, and return drive.",
+      },
+    ],
+    included: [
+      "Round-trip VIP private highway transportation",
+      "1 night sea-view hotel accommodation with breakfast",
+      "All museum, citadel, and library entry tickets",
+      "Full meals including premium Alexandrian seafood banquet",
+    ],
+  },
+  {
     id: "beit-el-wadi-overnight",
     category: "overnight",
     categoryLabel: "Overnight Trip",
@@ -2121,7 +2251,7 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
                     >
                       <option value="Events (Back to school, Sports day, Family)">Events (Back to school, Sports day, Camps)</option>
                       <option value="Day Trip (Cairo Museums & Landmarks, Africano Park, Corona Factory, Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Cairo Museums, Africano Park, Corona Factory...)</option>
-                      <option value="Overnight Trip (Ras Sudr, Beit El Wadi, Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Ras Sudr, Beit El Wadi, Siwa...)</option>
+                      <option value="Overnight Trip (Fayoum, Sokhna, Alexandria, Ras Sudr, Beit El Wadi, Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Fayoum, Sokhna, Alexandria, Ras Sudr, Beit El Wadi...)</option>
                       <option value="Workshop (Self Discover, Color Character, Mirror Painting, Crafts & Beading)">Workshops (Self Discover, Color Character, Mirror Painting...)</option>
                       <option value="Teachers & Corporate Team Building">Teachers &amp; Corporate Team Building</option>
                       <option value="Custom Tailored Experience">Custom Tailored Experience</option>
