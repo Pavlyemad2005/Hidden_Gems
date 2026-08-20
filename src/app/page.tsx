@@ -1545,7 +1545,7 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
         <div className="text-center max-w-3xl mx-auto mb-10">
           <p className="font-serif-luxury italic text-[#C5A059] text-lg mb-2">Explore what we offer</p>
           <h2 className="font-serif-luxury text-3xl sm:text-4xl md:text-5xl uppercase tracking-[0.1em] text-[#2C3E2D]">
-            Curated Experiences
+            Transformative Experiences
           </h2>
           <div className="w-16 h-[2px] bg-[#C5A059] mx-auto my-5"></div>
           <p className="text-sm sm:text-base text-[#4A5A48] font-light">
