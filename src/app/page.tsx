@@ -1564,33 +1564,65 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
         <div className="animate-marquee items-center">
           {[...Array(4)].map((_, i) => (
             <div key={i} className="flex items-center gap-8 mx-4 text-xs sm:text-sm font-serif-luxury uppercase tracking-[0.2em] text-[#2C3E2D] font-semibold">
-              <span>Beit El Wadi Lodges</span>
+              <span>Beit El Wadi</span>
               <span className="text-[#C5A059]">✦</span>
-              <span>Wadi Degla Protected Area</span>
+              <span>Wadi Degla</span>
               <span className="text-[#C5A059]">✦</span>
-              <span>Africano Safari Park</span>
+              <span>Africano Park</span>
               <span className="text-[#C5A059]">✦</span>
-              <span>Corona Chocolate Factory</span>
+              <span>Corona Factory</span>
               <span className="text-[#C5A059]">✦</span>
-              <span>Ras Sudr Kitesurfing</span>
+              <span>Dragon Island</span>
               <span className="text-[#C5A059]">✦</span>
-              <span>Self Discover Sessions</span>
+              <span>Mario Ropes</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Kayak</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Top Cairo Museums</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Fayoum</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Ras Sudr</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Siwa Oasis</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Dahab</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Nuweiba</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Aswan</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Alexandria</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Ain Sokhna</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Sharm El Sheikh</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Hurghada</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Self Discover</span>
               <span className="text-[#C5A059]">✦</span>
               <span>Color Your Own Character</span>
               <span className="text-[#C5A059]">✦</span>
-              <span>Dragon Island &amp; Mario Ropes</span>
-              <span className="text-[#C5A059]">✦</span>
               <span>Mirror Painting</span>
               <span className="text-[#C5A059]">✦</span>
-              <span>Siwa Oasis &amp; Dahab</span>
+              <span>Arts &amp; Crafts &amp; Beading</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Character Building</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Career Coaching</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Back to School</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Sports Day</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>End of the Year Celebration</span>
               <span className="text-[#C5A059]">✦</span>
               <span>Father &amp; Child Days</span>
               <span className="text-[#C5A059]">✦</span>
-              <span>Sports Day Championships</span>
+              <span>Mother &amp; Child Days</span>
               <span className="text-[#C5A059]">✦</span>
-              <span>End of Year Festivals</span>
-              <span className="text-[#C5A059]">✦</span>
-              <span>Teachers Team Building</span>
+              <span>Teachers &amp; Corporate Team Building</span>
               <span className="text-[#C5A059]">✦</span>
             </div>
           ))}
@@ -1643,11 +1675,12 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
               </h3>
               <div className="w-10 h-[1px] bg-[#C5A059] my-2"></div>
               <ul className="text-xs text-[#4A5A48] font-light space-y-2 text-left w-full my-4 pl-4 list-disc marker:text-[#5E715C]">
-                <li>Back to School Festivals &amp; Welcoming Days</li>
-                <li>Father / Mother &amp; Child Bonding Adventures</li>
-                <li>Teachers &amp; Corporate Team Building Camps</li>
-                <li>Youth Sports Days &amp; Inflatable Tournaments</li>
-                <li>End of Year Celebrations &amp; Graduations</li>
+                <li>Back to School</li>
+                <li>Sports Day</li>
+                <li>End of the Year Celebration</li>
+                <li>Father &amp; Child Days</li>
+                <li>Mother &amp; Child Days</li>
+                <li>Teachers &amp; Corporate Team Building</li>
               </ul>
               <div className="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] font-semibold text-[#5E715C] group-hover:text-[#2C3E2D] transition-colors">
                 <span>View Events</span>
@@ -1673,14 +1706,25 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
                 Trips
               </h3>
               <div className="w-10 h-[1px] bg-[#C5A059] my-2"></div>
-              <ul className="text-xs text-[#4A5A48] font-light space-y-2 text-left w-full my-4 pl-4 list-disc marker:text-[#3A7885]">
-                <li>Beit El Wadi Adventure Camp &amp; Lodges</li>
-                <li>Wadi Degla Protected Area &amp; Hikes</li>
-                <li>Dragon Island &amp; Mario Ropes</li>
-                <li>Fayoum Waterfalls &amp; Magic Lake</li>
-                <li>Siwa Oasis Desert Safari</li>
-                <li>Aswan &amp; Nile Felucca Sailing</li>
-                <li>Dahab, Nuweiba &amp; Blue Hole</li>
+              <ul className="text-xs text-[#4A5A48] font-light space-y-1.5 text-left w-full my-4 pl-4 list-disc marker:text-[#3A7885] grid grid-cols-2 gap-x-2">
+                <li>Beit El Wadi</li>
+                <li>Wadi Degla</li>
+                <li>Corona Factory</li>
+                <li>Africano Park</li>
+                <li>Dragon Island</li>
+                <li>Mario Ropes</li>
+                <li>Kayak</li>
+                <li>Cairo Museums</li>
+                <li>Fayoum</li>
+                <li>Ras Sudr</li>
+                <li>Siwa Oasis</li>
+                <li>Dahab</li>
+                <li>Nuweiba</li>
+                <li>Aswan</li>
+                <li>Alexandria</li>
+                <li>Ain Sokhna</li>
+                <li>Sharm El Sheikh</li>
+                <li>Hurghada</li>
               </ul>
               <div className="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] font-semibold text-[#3A7885] group-hover:text-[#2C3E2D] transition-colors">
                 <span>View Trips</span>
@@ -1707,11 +1751,12 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
               </h3>
               <div className="w-10 h-[1px] bg-[#C5A059] my-2"></div>
               <ul className="text-xs text-[#4A5A48] font-light space-y-2 text-left w-full my-4 pl-4 list-disc marker:text-[#A8583B]">
-                <li>Self Discover &amp; Mindset Journaling</li>
+                <li>Self Discover</li>
                 <li>Color Your Own Character</li>
-                <li>Mirror Painting Art</li>
-                <li>Arts &amp; Crafts &amp; Custom Beading</li>
-                <li>Character Building &amp; Coaching</li>
+                <li>Mirror Painting</li>
+                <li>Arts &amp; Crafts &amp; Beading</li>
+                <li>Character Building</li>
+                <li>Career Coaching</li>
               </ul>
               <div className="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] font-semibold text-[#A8583B] group-hover:text-[#2C3E2D] transition-colors">
                 <span>View Workshops</span>
