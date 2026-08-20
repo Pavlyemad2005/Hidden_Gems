@@ -1226,6 +1226,49 @@ const GEMS_DATA: GemItem[] = [
     ],
   },
   {
+    id: "end-of-year-celebration",
+    category: "events",
+    categoryLabel: "Event",
+    tag: "Event · School Festival & Graduation",
+    title: "End of the Year Celebration",
+    subtitle: "Carnival booths, live talent stage shows, food courts & memory keepsakes",
+    description:
+      "Spectacular end-of-year school festivals and graduation celebrations. Featuring interactive live talent stages, carnival game booths, bake sales, art zones, memory photo booths, DJ music, and memorable awards ceremonies.",
+    duration: "Full Day / Evening Festival",
+    location: "School Campus / Private Garden / Club Grounds",
+    targetAudience: "Schools, Graduates, Students & Families",
+    image: "/photos/end-of-year.png",
+    highlights: [
+      "Live stage setup for student talent shows, live music & performances",
+      "Interactive carnival game booths, bake sale stalls & food court tents",
+      "Art creative zones, face painting & personalized memory yearbook booths",
+      "Grand celebration finale with confetti drops & student achievement awards",
+    ],
+    itinerary: [
+      {
+        step: "Morning",
+        title: "Carnival Opening & Booths",
+        desc: "Festive entrance, game stalls, student bake sales, and interactive art corners.",
+      },
+      {
+        step: "Midday",
+        title: "Talent Showcase & Performances",
+        desc: "Student musical performances, theatrical sketches, and teacher appreciation tribute.",
+      },
+      {
+        step: "Afternoon",
+        title: "Awards Ceremony & Confetti Party",
+        desc: "Honoring achievements, memorable photo sessions, DJ dance floor, and celebratory finale.",
+      },
+    ],
+    included: [
+      "Full carnival tent infrastructure, themed signage, and decorative festoons",
+      "Professional concert sound system, staging, and lighting truss",
+      "Carnival games, booths, facilitators, and activity supplies",
+      "Complete event coordination, safety stewards, and first aid support",
+    ],
+  },
+  {
     id: "father-mother-child",
     category: "events",
     categoryLabel: "Event",
@@ -1544,6 +1587,8 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
               <span>Father &amp; Child Days</span>
               <span className="text-[#C5A059]">✦</span>
               <span>Sports Day Championships</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>End of Year Festivals</span>
               <span className="text-[#C5A059]">✦</span>
               <span>Teachers Team Building</span>
               <span className="text-[#C5A059]">✦</span>
