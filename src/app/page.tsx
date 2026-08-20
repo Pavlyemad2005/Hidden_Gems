@@ -1415,6 +1415,38 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
         </div>
       </section>
 
+      {/* ================= MARQUEE TICKER BANNER ================= */}
+      <div className="border-y border-[#C5A059]/25 bg-[#F3ECE1] py-4 overflow-hidden shadow-xs">
+        <div className="animate-marquee items-center">
+          {[...Array(4)].map((_, i) => (
+            <div key={i} className="flex items-center gap-8 mx-4 text-xs sm:text-sm font-serif-luxury uppercase tracking-[0.2em] text-[#2C3E2D] font-semibold">
+              <span>Beit El Wadi Lodges</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Wadi Degla Protected Area</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Africano Safari Park</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Corona Chocolate Factory</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Ras Sudr Kitesurfing</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Color Your Own Character</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Dragon Island &amp; Mario Ropes</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Mirror Painting</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Siwa Oasis &amp; Dahab</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Father &amp; Child Days</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Teachers Team Building</span>
+              <span className="text-[#C5A059]">✦</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* ================= PHILOSOPHY SECTION ================= */}
       <section id="philosophy" className="py-20 px-6 border-y border-[#C5A059]/20 bg-[#F3ECE1]/60">
         <div className="max-w-4xl mx-auto text-center">
