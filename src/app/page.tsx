@@ -21,6 +21,7 @@ interface GemItem {
   targetAudience?: string;
   image: string;
   highlights: string[];
+  locations?: string[];
   itinerary: { step: string; title: string; desc: string }[];
   included: string[];
 }
@@ -539,37 +540,52 @@ const GEMS_DATA: GemItem[] = [
     id: "museum-tour",
     category: "day-trips",
     categoryLabel: "Day Trip",
-    tag: "Day Trip · Cultural Discovery",
-    title: "Museum",
-    subtitle: "Unraveling the wonders of ancient Egypt with master historians",
+    tag: "Day Trip · Cultural Discovery & Heritage",
+    title: "Top Cairo Museums & Historical Landmarks",
+    subtitle: "Grand Egyptian Museum, Royal Palaces, Citadels & Civilizations",
     description:
-      "A private guided exploration of Egypt's greatest historical treasures (NMEC / Grand Egyptian Museum / Tahrir Museum) curated with engaging storytelling for all generations.",
+      "A curated cultural exploration across Cairo's most magnificent museums, royal palaces, and historic citadel landmarks with master Egyptologists and heritage historians.",
     duration: "Half / Full Day",
-    location: "Grand Egyptian Museum & Giza",
+    location: "Cairo & Giza Historic Sites",
     targetAudience: "Schools, Families & Cultural Explorers",
     image: "/photos/museum.png",
+    locations: [
+      "The Grand Egyptian Museum",
+      "The National Museum of Egyptian Civilization",
+      "Coptic Museum",
+      "Museum of Islamic Art",
+      "Citadel of Cairo",
+      "Egyptian Geological Museum",
+      "Mohamed Ali Palace",
+      "Abdeen Palace",
+    ],
     highlights: [
-      "Private Egyptologist historian guide tailored to the group",
-      "Royal mummies hall and King Tutankhamun galleries",
-      "Interactive scavenger hunt for kids and students",
-      "Lunch at heritage palace restaurant",
+      "Private Egyptologist & heritage historian guide tailored to the group",
+      "VIP fast-track access across iconic Cairo museums & royal palaces",
+      "Grand halls of King Tutankhamun, Royal Mummies & Islamic masterpieces",
+      "Interactive historical scavenger hunt for students and children",
     ],
     itinerary: [
       {
         step: "Part 1",
-        title: "The Royal Treasures",
-        desc: "Guided discovery through colossal statues and golden relics.",
+        title: "Grand Museums Discovery",
+        desc: "Guided exploration through The Grand Egyptian Museum (GEM) & NMEC Royal Mummies Hall.",
       },
       {
         step: "Part 2",
-        title: "Interactive Storytelling Walk",
-        desc: "Decoding hieroglyphics and secrets of ancient engineering.",
+        title: "Historic Citadels & Sacred Art",
+        desc: "Visiting Salah El-Din Citadel, Coptic Museum & Museum of Islamic Art.",
+      },
+      {
+        step: "Part 3",
+        title: "Royal Palaces & Heritage Dining",
+        desc: "Strolling through Mohamed Ali & Abdeen Palaces with lunch at a historic heritage venue.",
       },
     ],
     included: [
-      "All VIP fast-track museum entry tickets",
-      "Private Egyptologist historian speaker",
-      "Comfortable air-conditioned transport and lunch",
+      "All VIP fast-track museum & palace entry permits",
+      "Private Egyptologist historian guides & audio headsets",
+      "Comfortable air-conditioned private bus transport and lunch",
     ],
   },
   {
@@ -1825,6 +1841,25 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
                 </div>
               </div>
 
+              {/* Featured Museums & Historical Landmarks (if present) */}
+              {activeModalGem.locations && activeModalGem.locations.length > 0 && (
+                <div className="bg-[#FAF5EF] p-5 rounded-2xl border-2 border-[#C5A059]/40 shadow-xs">
+                  <h4 className="font-serif-luxury text-base uppercase tracking-wider text-[#2C3E2D] font-semibold mb-3 flex items-center gap-2">
+                    <span>🏛️ Featured Museums &amp; Historical Landmarks</span>
+                  </h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    {activeModalGem.locations.map((loc, idx) => (
+                      <div key={idx} className="flex items-center gap-3 p-3 rounded-xl bg-white border border-[#C5A059]/25 shadow-2xs">
+                        <span className="w-6 h-6 rounded-full bg-[#C5A059] text-[#FAF5EF] flex items-center justify-center text-xs font-bold flex-shrink-0">
+                          {idx + 1}
+                        </span>
+                        <span className="text-xs font-semibold text-[#2C3E2D] leading-tight">{loc}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Itinerary */}
               <div>
                 <h4 className="font-serif-luxury text-lg uppercase tracking-wider text-[#2C3E2D] font-semibold mb-3">
@@ -1950,7 +1985,7 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
                       className="w-full px-4 py-3.5 rounded-xl bg-[#FAF5EF] text-[#2B2D26] text-sm focus:outline-none focus:ring-2 focus:ring-[#C5A059] shadow-sm font-medium cursor-pointer"
                     >
                       <option value="Events (Back to school, Sports day, Family)">Events (Back to school, Sports day, Camps)</option>
-                      <option value="Day Trip (Africano Park, Corona Factory, Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Africano Park, Corona Factory, Wadi Degla...)</option>
+                      <option value="Day Trip (Cairo Museums & Landmarks, Africano Park, Corona Factory, Wadi Degla, Dragon Island, Mario Ropes, Kayaking, Fayoum, Alexandria, Sokhna, Port Said, Ismailia)">Day Trips (Cairo Museums, Africano Park, Corona Factory...)</option>
                       <option value="Overnight Trip (Ras Sudr, Beit El Wadi, Siwa, Dahab, Aswan, Nweibaa, Sharm, Hurghada)">Overnight Adventures (Ras Sudr, Beit El Wadi, Siwa...)</option>
                       <option value="Workshop (Self Discover, Color Character, Mirror Painting, Crafts & Beading)">Workshops (Self Discover, Color Character, Mirror Painting...)</option>
                       <option value="Teachers & Corporate Team Building">Teachers &amp; Corporate Team Building</option>
