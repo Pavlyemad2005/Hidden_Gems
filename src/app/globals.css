@@ -81,7 +81,7 @@ html, body {
 .animate-marquee {
   display: inline-flex;
   white-space: nowrap;
-  animation: scrollLeft 28s linear infinite;
+  animation: scrollLeft 65s linear infinite;
 }
 .animate-marquee:hover {
   animation-play-state: paused;
