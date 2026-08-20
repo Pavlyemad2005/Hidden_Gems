@@ -1183,6 +1183,49 @@ const GEMS_DATA: GemItem[] = [
     ],
   },
   {
+    id: "sports-day-event",
+    category: "events",
+    categoryLabel: "Event",
+    tag: "Event · Sports Tournaments & Field Day",
+    title: "Sports Day",
+    subtitle: "Relay races, obstacle sprints, championships & podium celebrations",
+    description:
+      "Turnkey high-energy Sports Days designed for schools, academies, and youth organizations. Packed with dynamic stadium sound, referee coordinators, team-colored gear, inflatable obstacle courses, track relay sprints, and gold medal podium celebrations.",
+    duration: "Full Day / Half Day",
+    location: "School Fields / Stadiums / Sports Clubs",
+    targetAudience: "Schools, Academies, Students & Families",
+    image: "/photos/sports-day.png",
+    highlights: [
+      "Multi-zone athletic stations: relay sprints, hurdles, tug-of-war & obstacle circuits",
+      "Dynamic DJ sound system, live match commentary & energetic MC animators",
+      "Custom colored team kits, headbands, flags & certified referee hosts",
+      "Official winners podium, medals, trophies & confetti celebration",
+    ],
+    itinerary: [
+      {
+        step: "Morning",
+        title: "Opening Ceremony & House Parade",
+        desc: "Team entrance with colored banners, torch relay, and warm-up fitness dance.",
+      },
+      {
+        step: "Midday",
+        title: "Championship Tournaments & Relays",
+        desc: "Track & field sprints, obstacle hurdles, inflatable challenges, and lunch break.",
+      },
+      {
+        step: "Afternoon",
+        title: "Tug-of-War Finals & Medal Ceremony",
+        desc: "Epic house tug-of-war showdown, gold medal podium awards, and team celebrations.",
+      },
+    ],
+    included: [
+      "Complete track & field setup: hurdles, batons, cones, ropes & tournament scoreboards",
+      "Professional DJ sound system, MC host, and referee coordinators",
+      "Custom winner medals, trophies, and commemorative participation certificates",
+      "Dedicated first aid medical team and safety stewards",
+    ],
+  },
+  {
     id: "father-mother-child",
     category: "events",
     categoryLabel: "Event",
@@ -1499,6 +1542,8 @@ Hello Hidden Gems Team, I would like to inquire about available dates, customize
               <span>Siwa Oasis &amp; Dahab</span>
               <span className="text-[#C5A059]">✦</span>
               <span>Father &amp; Child Days</span>
+              <span className="text-[#C5A059]">✦</span>
+              <span>Sports Day Championships</span>
               <span className="text-[#C5A059]">✦</span>
               <span>Teachers Team Building</span>
               <span className="text-[#C5A059]">✦</span>
